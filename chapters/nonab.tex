@@ -1,0 +1,454 @@
+\chapter{Positivity Bounds for Non Abelian Massive Vectors}
+Now, we move on to study bounds on the spectrum of theories with non abelian massive vectors. First, we will parametrize the most general form of the scattering amplitude for non abelian massive scalars, and study how to define positive arcs for even and odd substractions.
+Then, we will see how to extend it to the scattering of non abelian massive vectors. \textcolor{purple}{SEGUIR...}
+
+\subsection{Crossing Symmetry for Massive Vectors}
+One of the main challenges in dealing with massive particles carrying nonvanishing spin is understanding how crossing symmetry is realized, as this plays a crucial role in setting up our framework. To illustrate the issue, consider the scattering of massive vector bosons with definite helicities, for instance \( + - + - \), in the center of mass frame. Crossing symmetry formally corresponds to exchanging two external legs of the amplitude. 
+
+However, this exchange generally takes the kinematics out of the center of mass frame. Restoring the original frame then requires an additional Lorentz boost. In the scalar case, this poses no difficulty, and crossing symmetry reduces to the familiar relation
+\[
+\mathcal{M}(s,t,u) = \mathcal{M}(u,t,s)\,.
+\]
+
+In contrast, for massive particles with spin, the required boost acts nontrivially on the helicity states, inducing a mixing among them. As a result, the crossed amplitude is no longer equal to a single helicity amplitude, but instead becomes a linear combination of all possible helicity configurations:
+\[
+\mathcal{M}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}(s,t)
+=
+\sum_{\lambda'_i}
+X^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}
+\,
+\mathcal{M}^{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}(u,t)\,.
+\]
+
+The coefficients 
+\(X^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}\) define the so-called crossing matrix. This structure is well understood in the case of massive Abelian vector bosons \autocite{Bertucci:2024qzt}. In the following, we will see how, by adopting a suitable parametrization of the amplitude, the understanding of crossing symmetry can be extended to the non-Abelian case as well.
+
+\section{Scattering of Non Abelian Scalars}
+We will start by considering the $2 \rightarrow 2$ scattering of triplets under SU(2), which will help us understand the form that we expect for the amplitude for vector scattering.
+For a state $\ket{ab}$, it can be written in the base of the irreducible representations as 
+$$
+\ket{ab} = \sum_{I, i} (1a1b|Ii) \ket{I, i},
+$$
+where $(1a1b|Ii)$ is a Clebsch Gordan coefficient. In particular, 
+$$
+\ket{ab} = (1a1b|0,a+b) \ket{0, a+b}+(1a1b|1,a+b) \ket{1, a+b} + (1a1b|2,a+b) \ket{2, a+b}.
+$$
+By the Wigner-Eckart theorem, the scattering amplitudes among different irreducible representations vanish, and we can write 
+$$
+\mathcal{A}_{Ii \rightarrow J j} (s, t) = \delta_{ij} \delta_{IJ} \mathcal{A}_I(s, t),
+$$
+where $\mathcal{A}_I(s, t)$ is an eigen-amplitude. For this case, we have 3 different eigen-amplitudes: $\mathcal{A}_0$, $\mathcal{A}_1$ and $\mathcal{A}_2$.
+
+Crossing symmetry relates $s$ and $u$ channel amplitudes through
+$$
+\mathcal{A}_{ab \rightarrow cd} (s) = \mathcal{A}_{ad \rightarrow cb} (u).
+$$
+This allows us to understand how the irreducible amplitudes cross into each other. Defining the vector of $\mathcal{A}_I(s)$ as $\mathcal{A}(s)$, we can write 
+$$
+\mathcal{A}(u) = X \mathcal{A}(s),
+$$
+where $X$ is the crossing matrix. This crossing matrix is given by 
+$$
+X_{IJ} = \frac{1}{2I+1} \sum_{abcd}P_I^{abcd}P^{cbad}_J, 
+$$
+where the projectors are 
+$$
+P^{abcd}_I=\sum_i (1a1b|Ii)(1c1d|Ii).
+$$
+
+Therefore, the amplitude can be written in terms of the irreducible representation amplitudes as 
+\begin{align*}
+    \mathcal{A}_{abcd} &= \frac{1}{3} \mathcal{A}_0(s,t,u)\, \delta_{ab}\delta_{cd}
+    + \frac{1}{2} \mathcal{A}_1(s,t,u)\, (\delta_{ac}\delta_{bd}-\delta_{ad}\delta_{bc}) \;  + \\
+    &\quad + \frac{1}{2} \mathcal{A}_2(s,t,u)\,
+    \left( \delta_{ac} \delta_{bd} + \delta_{ad} \delta_{bc}
+    - \frac{2}{3} \delta_{ab}\delta_{cd} \right).
+    \end{align*}
+and the crossing matrix is 
+$$
+X=\begin{pmatrix}
+    \frac{1}{3} && -1 && \frac{5}{3} \\
+    \frac{1}{3} && \frac{1}{2} && - \frac{5}{6} \\
+    \frac{1}{3} &&  \frac{1}{2} && \frac{1}{6}
+\end{pmatrix}.
+$$
+It is straightforward to check that $X^2$ is the identity, as required.
+
+We can rewrite these eigen-amplitudes in a basis of amplitudes that do not mix under $s\leftrightarrow u$ crossing symmetry:
+$$
+\begin{pmatrix}
+    \alpha_{-}(s,t,u) \\ \alpha_{+,1}(s,t,u) \\ \alpha_{+,2}(s,t,u)
+\end{pmatrix} = 
+\begin{pmatrix}
+    -2 && 1 && 1 \\ \frac{5}{2} && 0 && 1 \\ \frac{3}{2} && 1 &&0
+\end{pmatrix}
+\begin{pmatrix}
+    \mathcal{A}_0(s,t,u) \\ \mathcal{A}_1(s, t, u) \\ \mathcal{A}_2(s,t,u)
+\end{pmatrix}.
+$$
+where $\alpha_{-}$ has eigenvalue -1, and $\alpha_{+, 1}$ and $\alpha_{+, 2}$ have eigenvalue +1. 
+
+The inverse transformation is given by the matrix 
+$$
+\begin{pmatrix}
+    \mathcal{A}_0(s,t,u) \\ \mathcal{A}_1(s, t, u) \\ \mathcal{A}_2(s,t,u)
+\end{pmatrix} = 
+\begin{pmatrix}
+-\frac{1}{6} & \frac{1}{6} & \frac{1}{6} \\
+\frac{1}{4} & -\frac{1}{4} & \frac{3}{4} \\
+\frac{5}{12} & \frac{7}{12} & -\frac{5}{12}
+\end{pmatrix}
+\begin{pmatrix}
+    \alpha_{-}(s,t,u) \\ \alpha_{+,1}(s,t,u) \\ \alpha_{+,2}(s,t,u)
+\end{pmatrix}.
+$$
+
+To finish writing this amplitude, we still need the symmetries of the eigen-amplitudes. Taking into account the delta functions from the projectors and defining the symmetric amplitude $M(s, u) = M(u, s)$, the eigen-amplitudes can be further simplified as 
+\begin{align}
+    \mathcal{A}_0(s,t,u) &= 3M(s,t) + 3M(s,u) - M(t,u), \notag\\
+    \mathcal{A}_1(s,t,u) &= 2\bigl(M(s,u) - M(s,t)\bigr), \notag\\
+    \mathcal{A}_2(s,t,u) &= 2M(t,u). \notag
+\end{align}
+
+We can also rewrite the full amplitude in terms of this symmetric amplitude, and we find that 
+\begin{equation}
+    \mathcal{A}_{abcd} = \delta_{ab} \delta_{cd} M(t, u) +  \delta_{cb}\delta_{bd} M(s, t) + \delta_{ad} \delta_{bc} M(s, u).
+    \label{eq:nonabscalar}
+\end{equation}
+
+\subsection{No Positive Odd-Substracted Sum Rules}
+
+Each of the isospin subamplitudes $\mathcal{M}_I$ admits a partial-wave expansion analogous to that given in \Cref{eq:highendecomp},
+\begin{equation}
+    \Im \mathcal{M}_I(s,t,u)
+    =
+    \sum_{\substack{J\,\mathrm{even}}}
+    16\pi(2J+1)\,
+    \mathcal{P}_J\;\left(1+\frac{2t}{s-4m^2}\right)
+    \rho_J^I(s).
+\end{equation}
+For the full amplitude to define a unitary $S$-matrix, each isospin channel must satisfy unitarity independently \textcolor{purple}{CITAR}. It then follows that the corresponding partial-wave absorptive coefficients are non-negative,
+\begin{equation}
+    \rho_J^I(s)\geq 0.
+\end{equation}
+
+
+Following the same procedure as in the abelian case, the $n$-subtracted dispersion relation for $2 \rightarrow 2$ scattering of non-abelian scalar fields takes the form
+\begin{equation}
+    a_n^I(t)
+    = \frac{1}{2 \pi i} \oint_{\mathcal{C}} \frac{ds}{\hat{s}^{n+1}} \,\mathcal{A}^I(\hat{s}, t)
+    = \frac{1}{\pi} \int_{\Lambda^2 - 2m^2}^{\infty} d\hat{s}
+    \left[
+        \frac{\mathcal{A}^I(\hat{s}, t)}{\hat{s}^{n+1}}
+        + (-1)^n X^{I}_{\ J}\,\frac{\mathcal{A}^J(\hat{s}, t)}{(\hat{s}+u)^{n+1}}
+    \right].
+    \label{eq:highennonab}
+\end{equation}
+
+In principle, we could now repeat the systematic analysis shown in \Cref{sec:sumrules} to derive general bounds on the Wilson coefficients and spectrum of these theories. This program is carried out in \textcolor{purple}{CITAR PIONES}. In what follows, however, we will focus primarily on positivity constraints.
+
+To establish such constraints, we must identify quantities whose high-energy average is manifestly positive definite. Here, an important complication arises: although the spectral densities $\rho^I$
+are positive, the coefficients with which they enter \Cref*{eq:highennonab} can be negative. Their sign may be affected both by the crossing matrix $X$ and by the factor $(-1)^n$, which appears whenever an odd number of subtractions is considered.
+
+For a general combination
+$$ \begin{pmatrix}
+a & b & c 
+\end{pmatrix} \cdot 
+\begin{pmatrix}
+    \mathcal{M}_0 \\
+    \mathcal{M}_1 \\
+    \mathcal{M}_2
+\end{pmatrix},  $$
+the crossed combination is 
+$$ \begin{pmatrix}
+a & b & c 
+\end{pmatrix} \cdot \mathbb{X} \cdot
+\begin{pmatrix}
+    \mathcal{M}_0 \\
+    \mathcal{M}_1 \\
+    \mathcal{M}_2
+\end{pmatrix}.  $$
+Thus, in order to construct a positive-definite sum rule with $n$ subtractions, we must determine coefficients $a$, $b$, and $c$ such that all components of the vector
+\begin{equation}
+    \begin{pmatrix}
+        a & b & c
+    \end{pmatrix}
+    \cdot
+    \left(
+    \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{pmatrix}
+    + (-1)^n \mathbb{X}
+    \right)
+\end{equation}
+are non-negative.
+
+For an even number of subtractions, a convenient basis of such positive combinations is given by
+\begin{equation}
+    \frac{2}{3}\mathcal{M}_2 + \frac{1}{3}\mathcal{M}_0,
+\end{equation}
+\begin{equation}
+    \frac{1}{2}\mathcal{M}_2 + \frac{1}{2}\mathcal{M}_1,
+\end{equation}
+and
+\begin{equation}
+    \mathcal{M}_2.
+\end{equation}
+
+Among the physical amplitudes whose arcs are positive are, for instance, $+- \to +-$ and $00 \to 00$.
+
+By contrast, for an odd number of subtractions, it is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non-vanishing combination satisfying the non-negativity condition above. Therefore, when $n$ is odd, there are no non-trivial linear combinations of isospin amplitudes whose arc contributions are manifestly positive definite.
+
+If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}^{\lambda_i}$ that, under crossing, is related to $\mathcal{M}^{\tilde{\lambda}_j}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}^{\lambda_i}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
+
+This situation is realised, for instance, in the $+ - \to + -$ channel for fixed-$u$ dispersion relations, this is, after implementing the $t \leftrightarrow u$ crossing transformation. In this case, if the crossed process $++ \to ++$ is analytic at high energies, only the $s$-channel discontinuity contributes, allowing positivity bounds to be established even for an odd number of subtractions. \textcolor{purple}{EXPLICAR N INFTY}
+
+\section{Parametrization of the Scattering Amplitude}
+
+\subsection{General Form of the Amplitude}
+
+In general, the amplitude for the $2 \rightarrow 2$ scattering of massive abelian vectors can be written as 
+\begin{equation}
+    \mathcal{M}_{abcd}^{\lambda_i}(s, t, u) = \delta_{ab} \delta_{cd} \mathcal{M}_1^{\lambda_i}(t, u)  + \delta_{ac} \delta_{bd} \mathcal{M}_2^{\lambda_i}(s, t) +\delta_{ad} \delta_{bc} \mathcal{M}_3^{\lambda_i}(s, u),
+\end{equation}
+where $a$, $b$, $c$ and $d$ are the colors of the external legs and $\lambda_i$ their helicities. Depending on the color structure, the amplitude breaks down into three subamplitudes, which are only partially crossing symmetric. In particular, we have that the set of amplitudes $\{ \mathcal{M}_1^{\lambda_i} \}$ is invariant under $t \leftrightarrow u$ crossing, this is, the subamplitudes mix into themselves with a crossing matrix $X_1$ through 
+\[
+\mathcal{M}_{1}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}(s, t, u)
+=
+\sum_{\lambda'_i}
+X^{\; \; \; \lambda_1 \lambda_2 \lambda_3 \lambda_4}_{1 \; \lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}
+\,
+\mathcal{M}_1^{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}(s, u,t)\,.
+\]
+The same procedure applies for $\{\mathcal{M}_2^{\lambda_i} \}$ under $s \leftrightarrow t$ crossing and for $\{\mathcal{M}_3^{\lambda_i} \}$ under $s \leftrightarrow u$ crossing.
+
+Notice how $t \leftrightarrow u$ exchange is equivalent to exchanging the legs $3$ and $4$, and therefore after mixing we will still be in the center of mass frame. This means that we do not need to perform a boost, and therefore crossing becomes 
+\begin{equation}
+    \mathcal{M}_1^{\lambda_1 \lambda_2 \lambda_3 \lambda_4} (u, t) = (-1)^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}  \mathcal{M}_1^{\lambda_1 \lambda_2 \lambda_4 \lambda_3} (t, u),
+    \label{eq:noboost}
+\end{equation}
+so the crossing matrix $X_1$ is diagonal. This is not necessarily true for the other two subamplitudes.
+
+\subsection{Parametrization of One Subamplitude}
+
+To begin, we focus on expressing the subamplitudes in the set ${\mathcal{M}_1^{\lambda_i}}$. Since each external leg admits three possible helicities ($+1$, $0$, and $-1$), one would naively expect a total of $3^4$ helicity configurations in this subset. However, the discrete symmetries of the system significantly reduce the number of independent amplitudes.
+In particular, we exploit boson exchange symmetry, which implies
+\begin{equation}
+\mathcal{M}_1^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}
+=
+\mathcal{M}_1^{\lambda_2 \lambda_1 \lambda_4 \lambda_3},
+\end{equation}
+as well as parity invariance, which leads to
+\begin{equation}
+\mathcal{M}_1^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}
+=
+\mathcal{M}_1^{-\lambda_1 \; -\lambda_2 \; -\lambda_3 \; -\lambda_4}.
+\end{equation}
+As a result, the full amplitude $\mathcal{M}_1$ can be completely specified in terms of 25 independent functions. Accordingly, we choose a basis consisting of 25 independent helicity configurations for the external legs, which is shown in \Cref*{tab:lambdas}.
+
+\begin{table}[hbtp]
+    \centering
+    \caption{List of external helicity configurations for $\mathcal{M}_1$ and their index}
+    \label{tab:lambdas}
+    
+    \begin{tabular}{ccc}
+    
+    % -------- BLOQUE 1 --------
+    \begin{tabular}{c|cccc}
+    $I$ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ \\
+    \hline
+    1 & 0 & 0 & 0 & 0 \\
+    2 & 0 & + & 0 & 0 \\
+    3 & + & 0 & 0 & 0 \\
+    4 & 0 & 0 & + &$-$ \\
+    5 & + &$-$ & 0 & 0 \\
+    \end{tabular}
+    &
+    % -------- BLOQUE 2 --------
+    \begin{tabular}{c|cccc}
+    $I$ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ \\
+    \hline
+    6 & + & 0 & $-$& 0 \\
+    7 & + & 0 & 0 & $-$\\
+    8 & 0 & 0 & + & + \\
+    9 & + & 0 & 0 & + \\
+    10 & + & 0 & + & 0 \\
+    \end{tabular}
+    &
+    % -------- BLOQUE 3 --------
+    \begin{tabular}{c|cccc}
+    $I$ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ \\
+    \hline
+    11 & + & + & 0 & 0 \\
+    12 & + & $-$& 0 & + \\
+    13 & + & $-$ & + & 0 \\
+    14 & + & 0 & $-$ & $-$ \\
+    15 & + & 0 & $-$ & + \\
+    \end{tabular}
+    
+    \\[2em]
+    
+    % -------- BLOQUE 4 --------
+    \begin{tabular}{c|cccc}
+    $I$ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ \\
+    \hline
+    16 & + & 0 & + & $-$ \\
+    17 & + & + & 0 & $-$ \\
+    18 & + & 0 & + & + \\
+    19 & + & + & + & 0 \\
+    20 & + & $-$ & $-$ & + \\
+    \end{tabular}
+    &
+    % -------- BLOQUE 5 --------
+    \begin{tabular}{c|cccc}
+    $I$ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ \\
+    \hline
+    21 & + & $-$ & + & $-$ \\
+    22 & + & + & $-$ & $-$ \\
+    23 & + & $-$ & + & + \\
+    24 & + & + & + & $-$ \\
+    25 & + & + & + & + \\
+    \end{tabular}
+    &
+    
+    \end{tabular}
+    
+    \end{table}
+Each amplitude $\mathcal{M}_1^I$ is constructed from polarization vectors $\varepsilon_i^\mu$ and momenta $p_i^\mu$. Because they must be linear in each $\varepsilon_i$, we introduce a basis of tensor structures built from Lorentz-invariant contractions of polarization vectors among themselves and with the external momenta.
+
+These structures can be organized into three classes:
+\begin{itemize}
+    \item \textbf{Type 1}, involving only polarization vectors, such as
+    \[
+    (\varepsilon_1 \cdot \varepsilon_2)(\varepsilon_3 \cdot \varepsilon_4)\,;
+    \]
+    
+    \item \textbf{Type 2}, involving four polarization vectors and two momenta, such as
+    \[
+    (\varepsilon_1 \cdot \varepsilon_2)(\varepsilon_3 \cdot p_4)(\varepsilon_4 \cdot p_3)\,;
+    \]
+    
+    \item \textbf{Type 3}, involving four polarization vectors and four momenta, such as
+    \[
+    (\varepsilon_1 \cdot p_2)(\varepsilon_2 \cdot p_3)(\varepsilon_3 \cdot p_4)(\varepsilon_4 \cdot p_1)\,.
+    \]
+\end{itemize}
+
+Again, there is a large number of structures, but only 25 of them are independent.
+Since the crossing matrix $X_1$ is diagonal, it is convenient to choose a basis of 25 structures with definite symmetry properties under the exchange $3 \leftrightarrow 4$, this is, either symmetric or antisymmetric. These structures are listed in \Cref*{tab:structures}.
+
+
+\begin{table}[hbtp]
+    \centering
+    \caption{Structures to describe the $2 \to 2$ scattering of massive non abelian vectors.}
+    
+    \begin{tabular}{|c|c|>{\centering\arraybackslash}m{11.5cm}|}
+        \hline 
+        $I$ &  $t \leftrightarrow u$ & $E_J$ \\ \hline \hline 
+        1 & $+$ & $\varepsilon_1 \cdot \varepsilon_2 \, \varepsilon_3 \cdot \varepsilon_4$ \\ \hline 
+        2 & $+$ & $\varepsilon_1 \cdot \varepsilon_4 \, \varepsilon_2 \cdot \varepsilon_3 + \varepsilon_1 \cdot \varepsilon_3 \, \varepsilon_2 \cdot \varepsilon_4$ \\ \hline
+        3 & $-$ & $\varepsilon_1 \cdot \varepsilon_3 \, \varepsilon_2 \cdot \varepsilon_4 - \varepsilon_1 \cdot \varepsilon_4 \, \varepsilon_2 \cdot \varepsilon_3$ \\ \hline 
+        4 & $+$ & $\frac{1}{m^2} \left( \varepsilon_3 \cdot \varepsilon_4 \, p_1 \cdot \varepsilon_2 \, p_2 \cdot \varepsilon_1 \right)$ \\ \hline 
+        5 & $+$ & $\frac{1}{2m^2} \, \varepsilon_1 \cdot \varepsilon_2 \left( p_1 \cdot \varepsilon_4 \, p_2 \cdot \varepsilon_3 + p_1 \cdot \varepsilon_3 \, p_2 \cdot \varepsilon_4 \right)$\\ \hline 
+        6 & $+$ & $\frac{1}{m^2} \, \varepsilon_1 \cdot \varepsilon_2 \left( p_1 \cdot \varepsilon_3 \, p_1 \cdot \varepsilon_4 + p_2 \cdot \varepsilon_3 \, p_2 \cdot \varepsilon_4 \right)$ \\ \hline 
+        7 & $-$ & $\frac{1}{m^2} \, \varepsilon_1 \cdot \varepsilon_2 \left( p_1 \cdot \varepsilon_3 \, p_2 \cdot \varepsilon_4 - p_1 \cdot \varepsilon_4 \, p_2 \cdot \varepsilon_3 \right)$ \\ \hline 
+        8 & $-$ & $\frac{1}{m^2}\, \varepsilon_3 \cdot \varepsilon_4 \left( p_2 \cdot \varepsilon_1 \, p_3 \cdot \varepsilon_2 - p_1 \cdot \varepsilon_2 \, p_3 \cdot \varepsilon_1 \right)$ \\ \hline 
+        9 & $+$ & $\frac{1}{2m^2} \, \varepsilon_3 \cdot \varepsilon_4 \left( p_1 \cdot \varepsilon_2 \, p_3 \cdot \varepsilon_1 + \left( p_2 \cdot \varepsilon_1 + 2 p_3 \cdot \varepsilon_1 \right) p_3 \cdot \varepsilon_2 \right)$ \\ \hline 
+        10 & $+$ & $\frac{1}{m^2} ( 
+            \varepsilon_1 \cdot \varepsilon_3  ( - (p_1 \cdot \varepsilon_4) )  (p_1 \cdot \varepsilon_2 + p_3 \cdot \varepsilon_2) 
+            + \varepsilon_1 \cdot \varepsilon_4  p_1 \cdot \varepsilon_3  p_3 \cdot \varepsilon_2 
+            - \varepsilon_2 \cdot \varepsilon_3  p_2 \cdot \varepsilon_4  (p_2 \cdot \varepsilon_1 + p_3 \cdot \varepsilon_1) 
+            + \varepsilon_2 \cdot \varepsilon_4  p_2 \cdot \varepsilon_3  p_3 \cdot \varepsilon_1 
+            )$ \\ \hline 
+        11 & $+$ & $\frac{1}{m^2} (
+            \varepsilon_1 \cdot \varepsilon_3  p_1 \cdot \varepsilon_4  p_3 \cdot \varepsilon_2
+            - \varepsilon_1 \cdot \varepsilon_4  p_1 \cdot \varepsilon_3  (p_1 \cdot \varepsilon_2 + p_3 \cdot \varepsilon_2)
+            + \varepsilon_2 \cdot \varepsilon_3 p_2 \cdot \varepsilon_4  p_3 \cdot \varepsilon_1
+            - \varepsilon_2 \cdot \varepsilon_4  p_2 \cdot \varepsilon_3, (p_2 \cdot \varepsilon_1 + p_3 \cdot \varepsilon_1)
+            )$ \\ \hline 
+        12 & $+$ & $\frac{1}{m^2} (
+            \varepsilon_1 \cdot \varepsilon_3  ( - (p_2 \cdot \varepsilon_4) )  (p_1 \cdot \varepsilon_2 + p_3 \cdot \varepsilon_2)
+            + \varepsilon_1 \cdot \varepsilon_4  p_2 \cdot \varepsilon_3  p_3 \cdot \varepsilon_2
+            - \varepsilon_2 \cdot \varepsilon_3 p_1 \cdot \varepsilon_4  (p_2 \cdot \varepsilon_1 + p_3 \cdot \varepsilon_1)
+            + \varepsilon_2 \cdot \varepsilon_4  p_1 \cdot \varepsilon_3  p_3 \cdot \varepsilon_1
+            )$  \\ \hline
+        13 & $+$ & $\frac{1}{m^2}(\varepsilon_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_2-\varepsilon_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,(p_1\cdot\varepsilon_2+p_3\cdot\varepsilon_2)+\varepsilon_2\cdot\varepsilon_3\,p_1\cdot\varepsilon_4\,p_3\cdot\varepsilon_1-\varepsilon_2\cdot\varepsilon_4\,p_1\cdot\varepsilon_3\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1))$ \\ \hline 
+        14 & $-$ & $\frac{1}{m^2}(\varepsilon_1\cdot\varepsilon_3\,p_1\cdot\varepsilon_4\,p_3\cdot\varepsilon_2+\varepsilon_1\cdot\varepsilon_4\,p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_2+p_3\cdot\varepsilon_2)-\varepsilon_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_1-\varepsilon_2\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1))$ \\ \hline 
+        15 & $-$ & $\frac{1}{m^2}(\varepsilon_1\cdot\varepsilon_3\,p_1\cdot\varepsilon_4\,(p_1\cdot\varepsilon_2+p_3\cdot\varepsilon_2)+\varepsilon_1\cdot\varepsilon_4\,p_1\cdot\varepsilon_3\,p_3\cdot\varepsilon_2-\varepsilon_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-\varepsilon_2\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_1)$ \\ \hline 
+        16 & $-$ & $\frac{1}{m^2}(\varepsilon_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_2+\varepsilon_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,(p_1\cdot\varepsilon_2+p_3\cdot\varepsilon_2)-\varepsilon_2\cdot\varepsilon_3\,p_1\cdot\varepsilon_4\,p_3\cdot\varepsilon_1-\varepsilon_2\cdot\varepsilon_4\,p_1\cdot\varepsilon_3\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1))$ \\ \hline 
+        17 & $-$ & $\frac{1}{m^2}(\varepsilon_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_1\cdot\varepsilon_2+p_3\cdot\varepsilon_2)+\varepsilon_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_2-\varepsilon_2\cdot\varepsilon_3\,p_1\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-\varepsilon_2\cdot\varepsilon_4\,p_1\cdot\varepsilon_3\,p_3\cdot\varepsilon_1)$ \\ \hline 
+        18 & $+$ & $\frac{1}{m^4}\,p_1\cdot\varepsilon_2\,p_2\cdot\varepsilon_1\,(p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3+p_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4)$ \\ \hline 
+        19 & $-$ & $\frac{1}{m^4}\,p_1\cdot\varepsilon_2\,p_2\cdot\varepsilon_1\,(p_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4-p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3)$ \\ \hline 
+        20 & $+$ & $\frac{1}{m^4}\,p_1\cdot\varepsilon_2\,p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_1+(p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_1+p_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1))\,p_3\cdot\varepsilon_2$ \\ \hline 
+        21 & $-$ & $-\frac{1}{m^4}\,( (p_1\cdot\varepsilon_3\,p_1\cdot\varepsilon_4 + p_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4)\,(p_1\cdot\varepsilon_2\,p_3\cdot\varepsilon_1 - p_2\cdot\varepsilon_1\,p_3\cdot\varepsilon_2) )$ \\ \hline 
+        22 & $-$ & $\frac{1}{m^4}\,(p_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_1)\,p_3\cdot\varepsilon_2-p_1\cdot\varepsilon_2\,p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3\,p_3\cdot\varepsilon_1$ \\ \hline 
+        23 & $-$ & $m^4\,p_1\cdot\varepsilon_2\,(p_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_1))-(p_2\cdot\varepsilon_1\,(p_1\cdot\varepsilon_4\,(p_1\cdot\varepsilon_3+p_2\cdot\varepsilon_3)-p_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4)+(p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_3-p_1\cdot\varepsilon_3\,p_2\cdot\varepsilon_4)\,p_3\cdot\varepsilon_1)\,p_3\cdot\varepsilon_2$ \\ \hline 
+        24 & $+$ & $\frac{1}{2m^4}(p_1\cdot\varepsilon_2\,(p_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1-p_3\cdot\varepsilon_1)+p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_1-(p_1\cdot\varepsilon_4+p_2\cdot\varepsilon_4)\,p_3\cdot\varepsilon_1))-(p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_4\,p_2\cdot\varepsilon_1+(2\,p_1\cdot\varepsilon_4+p_2\cdot\varepsilon_4)\,p_3\cdot\varepsilon_1)+p_2\cdot\varepsilon_3\,(p_2\cdot\varepsilon_1\,(p_1\cdot\varepsilon_4+p_2\cdot\varepsilon_4)+(p_1\cdot\varepsilon_4+2\,p_2\cdot\varepsilon_4)\,p_3\cdot\varepsilon_1))\,p_3\cdot\varepsilon_2)$ \\ \hline 
+        25 & $+$ & $\frac{1}{2m^4}(p_1\cdot\varepsilon_2\,(p_2\cdot\varepsilon_3\,p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)+p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)-p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_1))+(p_1\cdot\varepsilon_3\,(p_1\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+2\,p_3\cdot\varepsilon_1)-p_2\cdot\varepsilon_4\,p_3\cdot\varepsilon_1)+p_2\cdot\varepsilon_3\,(p_2\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+2\,p_3\cdot\varepsilon_1)-p_1\cdot\varepsilon_4\,(p_2\cdot\varepsilon_1+p_3\cdot\varepsilon_1)))\,p_3\cdot\varepsilon_2)$ \\ \hline 
+        \label{tab:structures}
+    \end{tabular}
+\end{table}
+
+In this basis, the amplitude can be written as
+\begin{equation}
+    \mathcal{M}_1^I = \sum_J E^I_{(1) J}\, F^J,
+\end{equation}
+where $E^I_{(1) J}$ is the matrix whose element $(I,J)$ corresponds to the evaluation of the $J$-th structure for the helicity configuration $I$, and $F^J$ are scalar functions of the Mandelstam variables.
+
+By construction, each function $F^J$ has definite symmetry under the exchange $t \leftrightarrow u$. Symmetric functions can be written as
+\[
+f(t,u) = a_0 + a_1 (t+u) + a_2 (t+u)^2 + a_3\, tu + \cdots,
+\]
+while antisymmetric functions take the form
+\[
+f(t,u) = (t-u)\bigl[b_0 + b_1 (t+u) + b_2 (t+u)^2 + b_3\, tu + \cdots \bigr].
+\]
+With these functions and the structures, we have fully parametrized the $\mathcal{M}_1$ family of subamplitudes. We will now see how we can use this information to write the full ampltiude.
+
+\subsection{Other Subamplitudes}
+We now turn to the parametrization of the family $\mathcal{M}_2^{\lambda_i}$, which is characterized by being symmetric under the exchange $s \leftrightarrow t$. Following exactly the same strategy as before, we decompose it in terms of a new set of structures and the same scalar functions:
+\begin{equation}
+\mathcal{M}_2^{I} = \sum_{J} E_{(2)J}^I \, F^J.
+\end{equation}
+The idea is to reuse as much information as possible from the previous construction. Rather than introducing an entirely new basis, we define the structures $E_{(2)}$ by crossing symmetry, namely as the $s \leftrightarrow u$ crossed version of the $E_{(1)}$ structures. 
+
+We can also choose the external helicity configurations $\tilde{I}$ of the basis as the $s \leftrightarrow u$ crossed version of the ones shown in \Cref{tab:lambdas}. Therefore, our new subamplitudes can be easily built as
+\begin{equation}
+    \mathcal{M}_1^I (t, u) \xrightarrow{s \leftrightarrow u} \mathcal{M}_2^{\tilde{I}}(s, t).
+\end{equation}
+
+As discussed previously, the \( t \leftrightarrow u \) crossing matrix for \( \mathcal{M}_1^I \) is diagonal and given by \Cref{eq:noboost}. However, this is no longer the case for \( \mathcal{M}_2 \) under \( s \leftrightarrow t \) crossing. In this situation, a Lorentz boost must be applied after crossing in order to return the amplitude to the center-of-mass frame.  
+
+At this stage, the decomposition of the subamplitude into tensor structures and scalar functions becomes particularly advantageous. By construction, the 25 functions \( F^J(s,t) \) have well-defined transformation properties under the crossing \( s \leftrightarrow t \). In particular, one can write
+\begin{equation}
+    F^J(t,s) = C^J_{\ I}\, F^I(s,t),
+\end{equation}
+where \( C \) is the matrix encoding the action of crossing on the scalar functions.
+
+Using this relation, the crossed subamplitude can be expressed as
+\begin{equation}
+    \mathcal{M}_2^I(t, s) = \sum_J E_{I}^{(2) J}(t, s)\, F^J(t, s)
+    = \sum_{J,K} E_{I}^{(2) J}(t, s)\, C^J_{\ K}\, F^K(s,t).
+\end{equation}
+
+We now insert the definition of the subamplitude in terms of the functions,
+\begin{equation}
+    F^K(s,t) = \left(E^{(2)}(s,t)\right)^{-1}{}^{K}_{\ L}\, \mathcal{M}_2^L(s,t),
+\end{equation}
+which leads to
+\begin{equation}
+    \mathcal{M}_2^I(t, s) = \sum_{J,K,L} E_{I}^{(2) J}(t, s)\, C^J_{\ K}\, \left(E^{(2)}(s,t)\right)^{-1}{}^{K}_{\ L}\, \mathcal{M}_2^L(s, t).
+\end{equation}
+
+From this, the crossing matrix is identified as
+\begin{equation}
+    \mathbb{X}(s,t) = \mathbb{E}^{(2)}(t, s)\, \mathbb{C}\, \left(\mathbb{E}^{(2)}(s, t)\right)^{-1}.
+\end{equation}
+
+In general, this matrix is not diagonal, implying that crossing transformations mix the different subamplitudes.
+
+Finally, the same procedure used to obtain \(\mathcal{M}_2^I(s, t)\) can be applied to construct \(\mathcal{M}_3^I(s, u)\), which is obtained as the crossed version of \(\mathcal{M}_1^I(t, u)\) under \( s \leftrightarrow t \).
+
+\section{Positivity Bounds at Finite $t$}

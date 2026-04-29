@@ -1,0 +1,42 @@
+%% Thesis type: bachelor, master, doctoral
+\NewExpandableDocumentCommand{\ThesisType}{}{master}
+
+%% Thesis title (exactly as in the formal assignment)
+\NewExpandableDocumentCommand{\ThesisTitle}{}{Title}
+%% Plaintext version for PDF metadata, uncomment if needed (defauls to \ThesisTitle)
+\NewExpandableDocumentCommand{\ThesisTitlePlaintext}{}{Title}
+%% Thesis title (if custom formatting is needed for the title page, defauls to \ThesisTitle)
+\NewExpandableDocumentCommand{\ThesisTitleFront}{}{
+    \ThesisTitle\\
+}
+
+%% Author of the thesis
+\NewExpandableDocumentCommand{\ThesisAuthor}{}{María Rodríguez Domínguez}
+%% Plaintext version for PDF metadata, uncomment if needed (defauls to \ThesisAuthor)
+\NewExpandableDocumentCommand{\ThesisAuthorPlaintext}{}{María Rodríguez Domínguez}
+
+%% Year when the thesis is submitted
+\NewDocumentCommand{\YearSubmitted}{}{2026}
+%% Year of the last revision, uncomment if it is different from \YearSubmitted
+% \NewDocumentCommand{\YearRevision}{}{2025}
+
+%% University
+\NewDocumentCommand{\University}{}{Université de Genève}
+
+%% Name of the department or institute, where the work was officially assigned
+%% (according to the Organizational Structure of MFF UK in English,
+%% or a full name of a department outside MFF)
+\NewDocumentCommand{\Department}{}{
+  Université de Genève \\[0.7em]
+  {\fontsize{14pt}{14pt}\selectfont Section de Physique}
+}
+
+
+%% Thesis supervisor: name, surname and titles
+\NewDocumentCommand{\Supervisor}{}{Francesco Riva}
+
+
+%% Abstract (recommended length around 80-200 words; this is not a copy of your thesis assignment!)
+\NewDocumentCommand{\Abstract}{}{%
+    \textcolor{red}{Write abstract here.}
+}
