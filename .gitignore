@@ -32,3 +32,9 @@ thesis.pdf
 
 ## ignore "old" PDF files
 *_old.pdf
+
+*.bbl
+.blg
+*.bcf
+*.log 
+thesis.toc
