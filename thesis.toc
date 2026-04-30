@@ -17,21 +17,21 @@
 \contentsline {section}{\numberline {2.3}Finding Bounds on the Coefficients}{8}{section*.14}%
 \contentsline {section}{\numberline {2.4}Adding Resonances}{11}{section*.16}%
 \contentsline {subsection}{Generalization to Massive Scalars}{13}{section*.17}%
-\contentsline {section}{\numberline {2.5}Different Number of Substractions}{13}{section*.18}%
-\contentsline {chapter}{\numberline {3}Positivity Bounds for Massive Scalars}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}$-2$-th Substracted Dispersion Relations}{14}{section*.19}%
-\contentsline {section}{\numberline {3.2}0-th subtracted dispersion relations}{15}{section*.20}%
-\contentsline {subsection}{Analytic Bounds on the Spectrum}{16}{section*.21}%
-\contentsline {subsection}{Numerical Bounds on the Spectrum}{19}{section*.22}%
-\contentsline {chapter}{\numberline {4}Positivity Bounds for Non Abelian Massive Vectors}{23}{chapter.4}%
-\contentsline {subsection}{Crossing Symmetry for Massive Vectors}{23}{section*.28}%
-\contentsline {section}{\numberline {4.1}Scattering of Non Abelian Scalars}{23}{section*.29}%
-\contentsline {subsection}{No Positive Odd-Substracted Sum Rules}{25}{section*.30}%
-\contentsline {section}{\numberline {4.2}Parametrization of the Scattering Amplitude}{27}{section*.31}%
-\contentsline {subsection}{General Form of the Amplitude}{27}{section*.32}%
-\contentsline {subsection}{Parametrization of One Subamplitude}{27}{section*.33}%
-\contentsline {subsection}{Other Subamplitudes}{29}{section*.36}%
-\contentsline {section}{\numberline {4.3}Positivity Bounds at Finite $t$}{31}{section*.37}%
-\contentsline {chapter}{\numberline {5}Discussion}{32}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Conventions}{33}{appendix.A}%
+\contentsline {section}{\numberline {2.5}Different Numbers of Subtractions}{14}{section*.18}%
+\contentsline {chapter}{\numberline {3}Positivity Bounds for Massive Scalars}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}$-2$-th Substracted Dispersion Relations}{15}{section*.19}%
+\contentsline {section}{\numberline {3.2}0-th subtracted dispersion relations}{16}{section*.20}%
+\contentsline {subsection}{Analytic Bounds on the Spectrum}{17}{section*.21}%
+\contentsline {subsection}{Numerical Bounds on the Spectrum}{20}{section*.22}%
+\contentsline {chapter}{\numberline {4}Positivity Bounds for Non Abelian Massive Vectors}{24}{chapter.4}%
+\contentsline {subsection}{Crossing Symmetry for Massive Vectors}{24}{section*.28}%
+\contentsline {section}{\numberline {4.1}Scattering of Non Abelian Scalars}{24}{section*.29}%
+\contentsline {subsection}{No Positive Odd-Substracted Sum Rules}{26}{section*.30}%
+\contentsline {section}{\numberline {4.2}Parametrization of the Scattering Amplitude}{28}{section*.31}%
+\contentsline {subsection}{General Form of the Amplitude}{28}{section*.32}%
+\contentsline {subsection}{Parametrization of One Subamplitude}{29}{section*.33}%
+\contentsline {subsection}{Other Subamplitudes}{30}{section*.36}%
+\contentsline {section}{\numberline {4.3}Positivity Bounds at Finite $t$}{32}{section*.37}%
+\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Conventions}{34}{appendix.A}%
 \contentsfinish 

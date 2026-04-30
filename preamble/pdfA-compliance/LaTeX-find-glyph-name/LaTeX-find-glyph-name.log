@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.20)  15 APR 2026 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.20)  29 APR 2026 20:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis_Draft/preamble/pdfA-compliance/LaTeX-find-glyph-name/LaTeX-find-glyph-name.tex
-(/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis_Draft/preamble/pdfA-compliance/LaTeX-find-glyph-name/LaTeX-find-glyph-name.tex
+**/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis/preamble/pdfA-compliance/LaTeX-find-glyph-name/LaTeX-find-glyph-name.tex
+(/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis/preamble/pdfA-compliance/LaTeX-find-glyph-name/LaTeX-find-glyph-name.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
 (/Users/maria/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
@@ -138,12 +138,12 @@ L3 programming layer <2025-07-11>
  ) 
 Here is how much of TeX's memory you used:
  1268 strings out of 470065
- 20354 string characters out of 5480295
+ 20318 string characters out of 5480295
  427005 words of memory out of 5000000
  29672 multiletter control sequences out of 15000+600000
  631470 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,5n,65p,331b,120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,5n,65p,325b,120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 Output written on LaTeX-find-glyph-name.pdf (1 page, 20918 bytes).
 PDF statistics:

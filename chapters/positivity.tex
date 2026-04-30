@@ -9,13 +9,7 @@ However, if the EFT arises from a consistent UV completion, its low-energy param
 
 \section{Properties of the Scattering Amplitude}
 
-As discussed in \Nref{ch:introduction}, the scattering of identical particles implies that the amplitude must be invariant under the exchange of the incoming and outgoing particles. In terms of Mandelstam variables, this invariance is implemented as a crossing symmetry under the interchange $ s \leftrightarrow u $.
-
-In addition, the scattering amplitude is assumed to be a real analytic function of the Mandelstam variables. Real analyticity implies that the values of the amplitude above and below the real axis are related through the Schwarz reflection principle. The combination of real analyticity with crossing symmetry therefore leads to the constraint
-\begin{equation}
-    \mathcal{M}(s,t,u) = \mathcal{M}^*(u,t,s),
-\end{equation}
-where the complex conjugation reflects the analytic continuation across the real axis.
+As discussed in \Nref{ch:introduction}, the properties of the scattering of identical particles imply that the amplitude must be invariant under the exchange of the incoming and outgoing particles. In terms of Mandelstam variables, this invariance is implemented as a crossing symmetry under the interchange $ s \leftrightarrow u $.
 
 Since the Mandelstam variables are not independent but satisfy
 \begin{equation}
@@ -26,6 +20,7 @@ it is convenient to work with only two independent variables. From now on, we de
     \mathcal{M}(s,t) \equiv \mathcal{M}\bigl(s,t,4m^2 - s - t\bigr).
 \end{equation}
 
+In addition, the scattering amplitude is assumed to be a real analytic function of the Mandelstam variables. Real analyticity implies that the values of the amplitude above and below the real axis are related through the Schwarz reflection principle. 
 With this convention, real analyticity implies that, in the vicinity of the real axis,
 \begin{equation}
     \mathcal{M}(s + i\varepsilon, t)
@@ -48,19 +43,21 @@ Moreover, unitarity leads to Froissart’s bound, which constrains the high-ener
 \end{equation}
 when the limit is taken along lines of constant phase in the complex $s$-plane.
 
+
 For fixed momentum transfer $t$, the scattering amplitude can be regarded as a complex function of the Mandelstam variable $s$. The general requirements of Lorentz invariance, causality and unitarity imply that $\mathcal{M}(s,t)$ is an analytic function of $s$ in the complex plane, except for singularities with a direct physical interpretation.
 
-These singularities consist of isolated poles and branch cuts. Poles correspond to the exchange of single-particle states, while branch cuts arise from multi-particle production thresholds. For the scattering of identical scalar particles of mass $m$, the first branch cut in the $s$-channel starts at the two-particle threshold,
+In the full theory, these singularities consist of isolated poles and branch cuts. Poles correspond to the exchange of single-particle states, while branch cuts arise from multi-particle production thresholds. For the scattering of identical scalar particles of mass $m$, the first branch cut in the $s$-channel starts at the two-particle threshold,
 \begin{equation}
     s = 4m^2,
 \end{equation}
-and extends along the positive real axis to $s \to +\infty$.
+and extends along the positive real axis to $s \to +\infty$. As a consequence of crossing symmetry, this cut is accompanied by a corresponding branch cut in the $u$-channel. When viewed as a function of complex $s$, and for fixed $t<0$, the amplitude therefore exhibits two branch cuts along the real axis: one for $s \geq 4m^2$, and another for $s \leq 4m^2 - t$.
+At tree level, however, the amplitude does not exhibit branch cuts, as no multi-particle intermediate states can go on shell. 
 
-As a consequence of crossing symmetry, the branch cut associated with physical particle production in the $s$-channel is accompanied by a corresponding branch cut in the $u$-channel. When viewed as a function of complex $s$, and for fixed $t<0$, the amplitude therefore exhibits two branch cuts along the real axis: one for $s \geq 4m^2$, and another for $s \leq 4m^2 - t$.
+In an effective field theory, the amplitude is only expected to provide a valid description below a cutoff scale $\Lambda^2$, with $\Lambda^2 \geq 4m^2$. For the purposes of dispersion relations, however, one assumes that the full analytic structure of the amplitude is inherited from a consistent UV completion. In particular, the branch cuts associated with particle production are taken to lie above the EFT regime, so that the low-energy expansion is valid away from the cuts, while their presence controls the analytic structure needed to write dispersion relations. We will therefore assume that the first branch point lies at or above the cutoff scale $\Lambda^2$.
 
 \subsection{Low-Energy Expansion}
 
-Since the scattering amplitude is analytic at low energies, it admits a low-energy expansion that can be computed within an effective field theory valid below a cutoff scale. At tree level, and assuming that the EFT is weakly coupled up to the cutoff of the theory $\Lambda$, the amplitude can be written as the most general function symmetric under permutations of $s$, $t$ and $u$. In the case in which there is no exchange of other particles, the amplitude is
+Since the scattering amplitude is analytic at low energies, it admits a low-energy expansion that can be computed within an effective field theory valid below a cutoff scale. At tree level, and assuming that the EFT is weakly coupled up to the cutoff of the theory $\Lambda^2$, the amplitude can be written as the most general function symmetric under permutations of $s$, $t$ and $u$. In the case in which there is no exchange of other particles, the amplitude is
 \begin{eqnarray}
     \mathcal{M}_{\text{low}}(s,t,u) = - \lambda 
      + g_2 (s^2 + t^2 + u^2) + g_3 (stu) + g_4 (s^2 + t^2 + u^2)^2 \notag \\ + g_5 (s^2 + t^2 + u^2)(stu) 
@@ -109,7 +106,10 @@ the imaginary part of the full amplitude, which will play a central role in what
     \label{eq:highendecomp}
 \end{equation}
 
-\textcolor{purple}{COMPROBAR RAÍZ}
+\begin{Todo}
+Comprobar raíz
+\end{Todo}
+    
 
 Finally, the unitarity condition on the $S$-matrix translates into the following bounds on the spectral densities:
 \begin{equation}
@@ -124,7 +124,11 @@ We start by defining the $n-$substracted arc as
 \begin{equation}
     a_n(t) = \frac{1}{2 \pi i} \oint_\mathcal{C} \frac{ds}{s-2m^2} \frac{\mathcal{M}(s, t)}{[(s-2m^2)(s+t-2m^2)]^{n/2}},
 \end{equation}
-where $\mathcal{C}$ is the contour shown in figure \textcolor{purple}{FIGURA}. For simplicity, from now on we will define the crossing symmetric variable $\hat{s} = s-2m^2$.
+where $\mathcal{C}$ is the contour shown in figure 
+\begin{Todo}
+    Añadir figura
+\end{Todo}
+. For simplicity, from now on we will define the crossing symmetric variable $\hat{s} = s-2m^2$.
 The integrand is analytic inside the contour except for the poles on the real axis, that come both from the poles that are present in the amplitude and the ones that arise from the denominator. Thus, from Cauchy's residue theorem, we can write that 
 \begin{equation}
     a_n(t) = \sum_{\hat{s}_i \in \mathbb{R}} 
@@ -409,7 +413,10 @@ Problems of this type can be formulated as semidefinite programs and solved nume
 
 To implement this procedure numerically, we must introduce a truncation. First, we retain only a finite number of null constraints. Second, the positivity condition must hold for all even spins $J$, but numerically we can only impose it up to a maximum value $J_{\text{max}}$. In addition, to improve convergence, it is useful to include constraints at parametrically large values of $J$, such as $100\,J_{\text{max}}$ or even $10^5\,J_{\text{max}}$. As we will discuss in later sections, the inclusion of sufficiently large spin values is crucial for achieving convergence.
 
-\textcolor{purple}{EXPLAIN MORE?} 
+\begin{Todo}
+Explain more?
+\end{Todo}
+    
 
 For $g_3$ we find that 
 \begin{equation}
@@ -435,7 +442,7 @@ Choosing a $\tilde{g}_3^0$ in the allowed range,
 Maximizing $A + B \tilde{g}_3^0$, we find the optimal lower bound for $\tilde{g}_4$. A similar procedure can be done to find the optimal upper bound. \Cref{fig:g3g4} show the results found numerically for the allowed region of these two coefficients.
 
 \begin{figure}[hbtp]
-    \includegraphics[width = 0.8 \textwidth]{ figures/g3g4.pdf}
+    \includegraphics[width = 0.7 \textwidth]{ figures/g3g4.pdf}
     \caption{Allowed region for the $\tilde{g}_3$ and $\tilde{g}_4$ Wilson coefficient in a theory for a massless scalar.}
     \label{fig:g3g4}
 \end{figure}
@@ -453,7 +460,11 @@ with $\lambda_i^2 \geq 0$. Our goal is to derive an upper bound on $\lambda_i^2$
 
 A possible approach to achieve this would be to repeat the analysis performed in \Cref{sec:dispersion}. First, one would explicitly write down the amplitude including the exchange of the resonances. Next, one would compute the corresponding arcs for this modified amplitude, which will now depend both on the Wilson coefficients and on the resonance couplings $\lambda_i^2$, and relate them to the appropriate heavy averages. Finally, one would combine the arcs in such a way that the contributions proportional to the Wilson coefficients cancel, yielding dispersion relations for the couplings.
 
-There is, however, a more elegant approach to this new problem. Instead of treating the resonance exchange explicitly within the low-energy amplitude and repeating the full dispersive analysis, we will regard the new poles introduced by the resonances as part of the high-energy contribution to the dispersion relations. In this framework, we use the fully analytic amplitude in \Cref{eq:eft}. The high-energy spectrum is then modeled as consisting of isolated poles together with a continuum that sets in above a scale $\Lambda'\.^2$, as shown in figure \textcolor{purple}{PONER FIGURA}.
+There is, however, a more elegant approach to this new problem. Instead of treating the resonance exchange explicitly within the low-energy amplitude and repeating the full dispersive analysis, we will regard the new poles introduced by the resonances as part of the high-energy contribution to the dispersion relations. In this framework, we use the fully analytic amplitude in \Cref{eq:eft}. The high-energy spectrum is then modeled as consisting of isolated poles together with a continuum that sets in above a scale $\Lambda'\.^2$, as shown in figure.
+\begin{Todo}
+Añadir figura
+\end{Todo}
+    
 
 This separation allows us to keep the low-energy expansion unchanged, while encoding the resonance effects directly in the high-energy spectral density, which is modified as 
 \begin{equation}
@@ -534,11 +545,43 @@ which can be compactly written as
 \hat{s} = \pm \abs{m_r^2 - 2m^2}.
 \]
 
-Therefore, depending on the sign of $m_r^2 - 2m^2$, only one of these poles contributes to the high-energy average, as shown in figure \textcolor{purple}{PONER}. The procedure described in the previous section applies without modification, the only required change being the replacement
+Therefore, depending on the sign of $m_r^2 - 2m^2$, only one of these poles contributes to the high-energy average, as shown in figure 
+\begin{Todo}
+    Añadir figura 
+\end{Todo}
+. The procedure described in the previous section applies without modification, the only required change being the replacement
 \[
 \delta(s - m_r^2) \;\longrightarrow\; 
 \delta\big(s - \abs{m_r^2 - 2m^2}\big).
 \]
 
 
-\section{Different Number of Substractions}
+\section{Different Numbers of Subtractions}
+
+So far, we have focused on amplitudes that satisfy the Froissart bound,
+\begin{equation}
+\lim_{s \to \infty} \left|\frac{\mathcal{M}(s)}{s^{2}}\right| = 0,
+\end{equation}
+this is, amplitudes whose asymptotic growth is slower than $s^2$. Unitarity guarantees that all physical amplitudes obey this condition. Consequently, such amplitudes admit twice-subtracted dispersion relations.
+
+It is also interesting to consider amplitudes with more restrictive asymptotic behaviour,
+\begin{equation}
+\lim_{s \to \infty} \left|\frac{\mathcal{M}(s)}{s^{n}}\right| = 0, \qquad n < 2.
+\end{equation}
+In these cases, we say that the amplitude satisfies an $n$-subtracted dispersion relation.
+
+This situation is physically relevant in at least two contexts. First, there exist amplitudes that converge faster than required by the Froissart bound. A notable example is the $W^+ W^- \to W^+ W^-$ scattering amplitude in the Standard Model, which we will analyse in detail in \Cref{chap:nonab}. 
+
+Second, this behaviour naturally arises in supersymmetric theories, where amplitudes can be written as
+\begin{equation}
+\mathcal{M}(s,t) = \delta^{8\mathcal{N}}(Q)\, f_{\mathcal{N}}(s,t).
+\end{equation}
+Since
+\begin{equation}
+\delta^{8\mathcal{N}}(Q) \sim s^{2\mathcal{N}},
+\end{equation}
+if the full amplitude $\mathcal{M}(s,t)$ satisfies the Froissart bound, it follows that
+\begin{equation}
+\lim_{s \to \infty} \left| \frac{f_{\mathcal{N}}(s,t)}{s^{2(1-\mathcal{N})}} \right| = 0.
+\end{equation}
+Therefore, studying superconvergent amplitudes also provides insight into supersymmetric amplitudes that are consistent with the unitarity constraint encoded in the Froissart bound.

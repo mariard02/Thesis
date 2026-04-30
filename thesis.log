@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.20)  29 APR 2026 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.20)  30 APR 2026 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis_Draft/thesis.tex
-(/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis_Draft/thesis.tex
+**/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis/thesis.tex
+(/Users/maria/Desktop/M^^c3^^a1ster/TFM/Thesis/thesis.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
 (/Users/maria/Library/Application Support/MiKTeX/texmfs/install/tex/latex/latex-lab/documentmetadata-support.ltx (/Users/maria/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pdfmanagement-testphase/pdfmanagement-testphase.sty
@@ -1693,7 +1693,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qzc' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
+ (/Users/maria/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
 
 [2
 
@@ -1727,9 +1729,7 @@ File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
 
 
 
-] (thesis.toc (/Users/maria/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
+] (thesis.toc)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1749,9 +1749,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) ha
 l.1 \chapter{Introduction}
                            \label{ch:introduction}
 Chapter 1.
-
-LaTeX Warning: Citation 'Bellazzini:2020cot' on page 1 undefined on input line 2.
-
 )
 
 [1
@@ -1788,17 +1785,19 @@ Chapter 2.
 <figures/g3g4.pdf, id=328, 854.19125pt x 558.085pt>
 File: figures/g3g4.pdf Graphic file (type pdf)
 <use figures/g3g4.pdf>
-Package pdftex.def Info: figures/g3g4.pdf  used on input line 438.
-(pdftex.def)             Requested size: 330.05322pt x 215.63406pt.
+Package pdftex.def Info: figures/g3g4.pdf  used on input line 445.
+(pdftex.def)             Requested size: 288.7942pt x 188.68193pt.
 
 
 [10]
 
 [11 <./figures/g3g4.pdf>]
 
-[12])
+[12]
 
-[13]
+[13])
+
+[14]
 \openout2 = `chapters/scalar.aux'.
 
  (chapters/scalar.tex
@@ -1819,78 +1818,76 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[14
+[15
 
 
 
 
 ]
-
-[15]
 
 [16]
 
 [17]
 
 [18]
-<figures/scalar_scalar.png, id=462, 462.528pt x 346.896pt>
-File: figures/scalar_scalar.png Graphic file (type png)
-<use figures/scalar_scalar.png>
-Package pdftex.def Info: figures/scalar_scalar.png  used on input line 319.
-(pdftex.def)             Requested size: 198.0294pt x 148.52188pt.
-<figures/scalar_scalar_with_high.png, id=463, 462.528pt x 346.896pt>
-File: figures/scalar_scalar_with_high.png Graphic file (type png)
-<use figures/scalar_scalar_with_high.png>
-Package pdftex.def Info: figures/scalar_scalar_with_high.png  used on input line 326.
-(pdftex.def)             Requested size: 198.0294pt x 148.52188pt.
-
 
 [19]
-<figures/plot.png, id=470, 462.528pt x 346.896pt>
+<figures/scalar_scalar.png, id=472, 462.528pt x 346.896pt>
+File: figures/scalar_scalar.png Graphic file (type png)
+<use figures/scalar_scalar.png>
+Package pdftex.def Info: figures/scalar_scalar.png  used on input line 323.
+(pdftex.def)             Requested size: 198.0294pt x 148.52188pt.
+<figures/scalar_scalar_with_high.png, id=473, 462.528pt x 346.896pt>
+File: figures/scalar_scalar_with_high.png Graphic file (type png)
+<use figures/scalar_scalar_with_high.png>
+Package pdftex.def Info: figures/scalar_scalar_with_high.png  used on input line 330.
+(pdftex.def)             Requested size: 198.0294pt x 148.52188pt.
+
+
+[20]
+<figures/plot.png, id=481, 462.528pt x 346.896pt>
 File: figures/plot.png Graphic file (type png)
 <use figures/plot.png>
-Package pdftex.def Info: figures/plot.png  used on input line 338.
+Package pdftex.def Info: figures/plot.png  used on input line 342.
 (pdftex.def)             Requested size: 309.4237pt x 232.08034pt.
-<figures/bounds_corrected2.png, id=473, 433.62pt x 289.08pt>
+<figures/bounds_corrected2.png, id=484, 433.62pt x 289.08pt>
 File: figures/bounds_corrected2.png Graphic file (type png)
 <use figures/bounds_corrected2.png>
-Package pdftex.def Info: figures/bounds_corrected2.png  used on input line 346.
+Package pdftex.def Info: figures/bounds_corrected2.png  used on input line 350.
 (pdftex.def)             Requested size: 309.4237pt x 206.29362pt.
 
 
-[20 <./figures/scalar_scalar.png> <./figures/scalar_scalar_with_high.png> <./figures/plot.png>]
-<figures/two_res.png, id=483, 462.528pt x 346.896pt>
+[21 <./figures/scalar_scalar.png> <./figures/scalar_scalar_with_high.png> <./figures/plot.png>]
+<figures/two_res.png, id=493, 462.528pt x 346.896pt>
 File: figures/two_res.png Graphic file (type png)
 <use figures/two_res.png>
-Package pdftex.def Info: figures/two_res.png  used on input line 359.
+Package pdftex.def Info: figures/two_res.png  used on input line 363.
 (pdftex.def)             Requested size: 309.4237pt x 232.08034pt.
-<figures/new_bounds.png, id=485, 462.528pt x 346.896pt>
+<figures/new_bounds.png, id=495, 462.528pt x 346.896pt>
 File: figures/new_bounds.png Graphic file (type png)
 <use figures/new_bounds.png>
-Package pdftex.def Info: figures/new_bounds.png  used on input line 376.
+Package pdftex.def Info: figures/new_bounds.png  used on input line 380.
 (pdftex.def)             Requested size: 309.4237pt x 232.08034pt.
 )
 
-[21 <./figures/bounds_corrected2.png>]
+[22 <./figures/bounds_corrected2.png>]
 
-[22 <./figures/two_res.png> <./figures/new_bounds.png>]
+[23 <./figures/two_res.png> <./figures/new_bounds.png>]
 \openout2 = `chapters/nonab.aux'.
 
  (chapters/nonab.tex
 Chapter 4.
 
-LaTeX Warning: Citation 'Bertucci:2024qzt' on page 23 undefined on input line 24.
+LaTeX Warning: Citation 'Bertucci:2024qzt' on page 24 undefined on input line 29.
 
 
 
-[23
+[24
 
 
 
 
 ]
-
-[24]
 
 [25]
 
@@ -1898,33 +1895,35 @@ LaTeX Warning: Citation 'Bertucci:2024qzt' on page 23 undefined on input line 24
 
 [27]
 
-LaTeX Warning: Float too large for page by 51.3147pt on input line 392.
-
-
-
 [28]
 
 [29]
 
+LaTeX Warning: Float too large for page by 51.3147pt on input line 407.
+
+
+
 [30]
 
+[31]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 469.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 469.
 
 )
 
-[31]
+[32]
 \openout2 = `chapters/conclusion.aux'.
 
  (chapters/conclusion.tex
 Chapter 5.
 )
 
-[32
+[33
 
 
 
@@ -1936,7 +1935,7 @@ Chapter 5.
 Appendix A.
 )
 
-[33
+[34
 
 
 
@@ -1971,17 +1970,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57916 strings out of 470065
- 1263383 string characters out of 5480295
- 2164592 words of memory out of 5000000
- 84676 multiletter control sequences out of 15000+600000
- 804948 words of font info for 352 fonts, out of 8000000 for 9000
+ 57947 strings out of 470065
+ 1263403 string characters out of 5480295
+ 2160665 words of memory out of 5000000
+ 84699 multiletter control sequences out of 15000+600000
+ 808176 words of font info for 355 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,17n,123p,1241b,1819s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,17n,123p,1235b,1819s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/maria/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/cmbright/dpi1037/cmbrmb10.pk>{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc} </Users/maria/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/cmbright/dpi1037/cmbrbx10.pk> </Users/maria/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/cmbright/dpi1037/cmbrsy10.pk>{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-mathex.enc}{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ec.enc}</Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbsy10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmex10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi6.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmmi8.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr17.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr6.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmr8.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmro12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbo10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmsso12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmsy8.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt12.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt8.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/maria/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qzcmi.pfb>
-Output written on thesis.pdf (38 pages, 1875230 bytes).
+Output written on thesis.pdf (39 pages, 1884979 bytes).
 PDF statistics:
- 874 PDF objects out of 1000 (max. 8388607)
- 212 named destinations out of 1000 (max. 500000)
- 98771 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
+ 102867 words of extra memory for PDF output out of 106986 (max. 10000000)
 
