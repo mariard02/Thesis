@@ -1,0 +1,239 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Berman:2024kdh}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e15ff536ee08293b8cd700a849d08e7f}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{fullhash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{fullhashraw}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{bibnamehash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{authorbibnamehash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{authornamehash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{authorfullhash}{e15ff536ee08293b8cd700a849d08e7f}
+      \strng{authorfullhashraw}{e15ff536ee08293b8cd700a849d08e7f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Analytic bounds on the spectrum of crossing symmetric S-matrices}}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/JHEP08(2025)066
+      \endverb
+      \verb{eprint}
+      \verb 2410.01914
+      \endverb
+    \endentry
+    \entry{Bertucci:2024qzt}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=37227b6b5f6634994c477fb9b0e3ef60}{%
+           family={Bertucci},
+           familyi={B\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a8c421087b87aa351d171c86ddf0bdda}{%
+           family={Henriksson},
+           familyi={H\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           suffix={Johan\bibnamedelima Vichi},
+           suffixi={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8c8291fdbfcfe3aaabcd67dcd392727f}{%
+           family={McPeak},
+           familyi={M\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=565e8be43a00fef2ae7abe50822b5455}{%
+           family={Ricossa},
+           familyi={R\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b6a4182d3a27ab87d69deb141d16644}{%
+           family={Riva},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c678f893bf490104bb68cdfa86fd1e80}
+      \strng{fullhash}{b69af04bb87932ff0c1d3275e31bfa17}
+      \strng{fullhashraw}{b69af04bb87932ff0c1d3275e31bfa17}
+      \strng{bibnamehash}{b69af04bb87932ff0c1d3275e31bfa17}
+      \strng{authorbibnamehash}{b69af04bb87932ff0c1d3275e31bfa17}
+      \strng{authornamehash}{c678f893bf490104bb68cdfa86fd1e80}
+      \strng{authorfullhash}{b69af04bb87932ff0c1d3275e31bfa17}
+      \strng{authorfullhashraw}{b69af04bb87932ff0c1d3275e31bfa17}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Positivity bounds on massive vectors}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1007/JHEP12(2024)051
+      \endverb
+      \verb{eprint}
+      \verb 2402.13327
+      \endverb
+    \endentry
+    \entry{Albert:2022oes}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=20b5bf15d9667b7c220cfb228ce638e5}{%
+           family={Albert},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=438546fbeae5e139a4b78ee590f1ea56}{%
+           family={Rastelli},
+           familyi={R\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{fullhash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{fullhashraw}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{bibnamehash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{authorbibnamehash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{authornamehash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{authorfullhash}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \strng{authorfullhashraw}{f1ebc0a915e421f48a26e7c48de5b35e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Bootstrapping pions at large N}}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/JHEP08(2022)151
+      \endverb
+      \verb{eprint}
+      \verb 2203.11950
+      \endverb
+    \endentry
+    \entry{Bellazzini:2020cot}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=785ee2a15760302ab0993d4a7e1df43c}{%
+           family={Bellazzini},
+           familyi={B\bibinitperiod},
+           given={Brando},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3180c86317051edce0c42eabd403c73a}{%
+           family={Elias\bibnamedelima Miró},
+           familyi={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52c93137a45519d587dcd4e85e9b4714}{%
+           family={Rattazzi},
+           familyi={R\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3a19e3472c04393d28fe7b9bf62d6618}{%
+           family={Riembau},
+           familyi={R\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9b6a4182d3a27ab87d69deb141d16644}{%
+           family={Riva},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e93730de1247f97cd36f9bcb633fa1c}
+      \strng{fullhash}{6695f6c812dcd21e4921bc4a6757e818}
+      \strng{fullhashraw}{6695f6c812dcd21e4921bc4a6757e818}
+      \strng{bibnamehash}{6695f6c812dcd21e4921bc4a6757e818}
+      \strng{authorbibnamehash}{6695f6c812dcd21e4921bc4a6757e818}
+      \strng{authornamehash}{6e93730de1247f97cd36f9bcb633fa1c}
+      \strng{authorfullhash}{6695f6c812dcd21e4921bc4a6757e818}
+      \strng{authorfullhashraw}{6695f6c812dcd21e4921bc4a6757e818}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{{Positive moments for scattering amplitudes}}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.104.036006
+      \endverb
+      \verb{eprint}
+      \verb 2011.00037
+      \endverb
+    \endentry
+    \entry{Manohar:2008tc}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=d5ebfa234b80141bc4bcfcbfdd18ae38}{%
+           family={Manohar},
+           familyi={M\bibinitperiod},
+           given={Aneesh\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=5341cc987344faf2e60c983b418478ee}{%
+           family={Mateu},
+           familyi={M\bibinitperiod},
+           given={Vicent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{fullhash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{fullhashraw}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{bibnamehash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{authorbibnamehash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{authornamehash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{authorfullhash}{b1a10a289d017ab055b59a5029f1bbda}
+      \strng{authorfullhashraw}{b1a10a289d017ab055b59a5029f1bbda}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{{Dispersion Relation Bounds for pi pi Scattering}}
+      \field{year}{2008}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.77.094019
+      \endverb
+      \verb{eprint}
+      \verb 0801.3222
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

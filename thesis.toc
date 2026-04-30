@@ -34,4 +34,5 @@
 \contentsline {section}{\numberline {4.3}Positivity Bounds at Finite $t$}{32}{section*.37}%
 \contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}%
 \contentsline {chapter}{\numberline {A}Conventions}{34}{appendix.A}%
+\contentsline {chapter}{References}{35}{appendix*.38}%
 \contentsfinish 
