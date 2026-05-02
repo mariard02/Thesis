@@ -26,7 +26,7 @@ X^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{\lambda'_1 \lambda'_2 \lambda'_3 \l
 \]
 
 The coefficients 
-\(X^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}\) define the so-called crossing matrix. This structure is well understood in the case of massive Abelian vector bosons \autocite{Bertucci:2024qzt}. In the following, we will see how, by adopting a suitable parametrization of the amplitude, the understanding of crossing symmetry can be extended to the non-Abelian case as well.
+\(X^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}\) define the so-called crossing matrix. This structure is well understood in the case of massive Abelian vectors \autocite{Bertucci:2024qzt}. In the following, we will see how, by adopting a suitable parametrization of the amplitude, the understanding of crossing symmetry can be extended to the non-Abelian case as well.
 
 \section{Scattering of Non Abelian Scalars}
 We will start by considering the $2 \rightarrow 2$ scattering of triplets under SU(2), which will help us understand the form that we expect for the amplitude for vector scattering.
@@ -206,7 +206,7 @@ Among the physical amplitudes whose arcs are positive are, for instance, $+- \to
 
 By contrast, for an odd number of subtractions, it is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non-vanishing combination satisfying the non-negativity condition above. Therefore, when $n$ is odd, there are no non-trivial linear combinations of isospin amplitudes whose arc contributions are manifestly positive definite.
 
-If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}^{\lambda_i}$ that, under crossing, is related to $\mathcal{M}^{\tilde{\lambda}_j}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}^{\lambda_i}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
+If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}$ that, under crossing, is related to $\hat{\mathcal{M}}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
 
 This situation is realised, for instance, in the $+ - \to + -$ channel for fixed-$u$ dispersion relations, this is, after implementing the $t \leftrightarrow u$ crossing transformation. In this case, if the crossed process $++ \to ++$ is analytic at high energies, only the $s$-channel discontinuity contributes, allowing positivity bounds to be established even for an odd number of subtractions. 
 \begin{Todo}
@@ -459,4 +459,55 @@ In general, this matrix is not diagonal, implying that crossing transformations 
 
 Finally, the same procedure used to obtain \(\mathcal{M}_2^I(s, t)\) can be applied to construct \(\mathcal{M}_3^I(s, u)\), which is obtained as the crossed version of \(\mathcal{M}_1^I(t, u)\) under \( s \leftrightarrow t \).
 
-\section{Positivity Bounds at Finite $t$}
+\section{Positivity Bounds in the Forward Limit}
+In order to relate amplitudes in different channels, it is convenient to project the subamplitudes onto a basis of definite color structures. 
+Concretely, crossing can be written as
+\begin{equation}
+    \mathcal{M}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{abcd} (s, t) = \sum_{\lambda_i'} 
+    \tilde{X}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4} (s, t)\,
+    \mathcal{M}_{a \bar{b} c \bar{d}}^{\lambda'_1 \bar{\lambda'_2} \lambda'_3 \bar{\lambda'_4}}(s,t),
+\end{equation}
+where $\tilde{X}$ is the crossing matrix encoding the transformation between the $s$- and $u$-channel amplitudes.
+
+In the high-energy, small-angle regime ($m^2,\, t \ll s$), the crossing matrix simplifies significantly \autocite{Bellazzini:2023nqj}:
+\begin{equation}
+    \tilde{X}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4} (s, t)
+    \propto \prod_{i} \left( \frac{\sqrt{|t|}\, m}{s} \right)^{|\lambda_i - \lambda'_i|}.
+\end{equation}
+This expression shows that helicity-changing contributions ($\lambda_i \neq \lambda'_i$) are parametrically suppressed in the forward limit.
+
+We can focus on elastic amplitudes of the form
+\begin{equation}
+    \mathcal{M}^{\lambda_1 \lambda_2 \lambda_1 \lambda_2}_{abab} (u, t)
+    \equiv \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t),
+\end{equation}
+for which crossing implies
+\begin{equation}
+    \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t)
+    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}} (s, t)
+    + \left( c\, \frac{\sqrt{|t|}\, m}{s} + \mathcal{O}\!\left(\frac{t m^2}{s u}\right) \right)
+    \mathcal{M}(s,t),
+\end{equation}
+where the subleading terms are suppressed at high energy.
+
+As a result, in the forward limit the amplitude satisfies the relation
+\begin{equation}
+    \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t=0)
+    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}} (s, t=0).
+\end{equation}
+This observation allows us to simplify the analysis of positivity bounds for massive non-Abelian vectors. In particular, for an even number of subtractions, it is convenient to define the symmetrized arcs as
+\begin{equation}
+    a_n(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
+    \frac{
+        \mathcal{M}^{\lambda_1 \lambda_2}_{ab}(s,t)
+        + \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}}(s,t)
+    }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{1 + n}}.
+\end{equation}
+
+
+Using the same standard dispersion relation arguments used in \Cref{chap:positivity}, one finds that in the forward limit these coefficients satisfy
+\begin{equation}
+    a_n(0) \geq 0, 
+    \qquad 
+    a_n(0) \leq \frac{a_{n-2}(0)}{\left(\Lambda^2 - 2m^2\right)^2}.
+\end{equation}
