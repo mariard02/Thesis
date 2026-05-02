@@ -466,7 +466,7 @@ Concretely, crossing can be written as
 \begin{equation}
     \mathcal{M}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4}_{abcd} (s, t) = \sum_{\lambda_i'} 
     \tilde{X}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4} (s, t)\,
-    \mathcal{M}_{a \bar{b} c \bar{d}}^{\lambda'_1 \bar{\lambda'_2} \lambda'_3 \bar{\lambda'_4}}(s,t),
+    \mathcal{M}_{a \bar{d} c \bar{b}}^{\lambda'_1 \bar{\lambda'_2} \lambda'_3 \bar{\lambda'_4}}(s,t),
 \end{equation}
 where $\tilde{X}$ is the crossing matrix encoding the transformation between the $s$- and $u$-channel amplitudes.
 
@@ -479,29 +479,29 @@ This expression shows that helicity-changing contributions ($\lambda_i \neq \lam
 
 We can focus on elastic amplitudes of the form
 \begin{equation}
-    \mathcal{M}^{\lambda_1 \lambda_2 \lambda_1 \lambda_2}_{abab} (u, t)
-    \equiv \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t),
+    \mathcal{M}^{\lambda_1 \lambda_2 \lambda_1 \lambda_2}_{abcd} (u, t)
+    \equiv \mathcal{M}^{\lambda_1 \lambda_2}_{abcd} (u, t),
 \end{equation}
 for which crossing implies
 \begin{equation}
-    \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t)
-    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}} (s, t)
+    \mathcal{M}^{\lambda_1 \lambda_2}_{abcd} (u, t)
+    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{d} c \bar{b}} (s, t)
     + \left( c\, \frac{\sqrt{|t|}\, m}{s} + \mathcal{O}\!\left(\frac{t m^2}{s u}\right) \right)
-    \mathcal{M}(s,t),
+    \mathcal{M}(s,t)_{a \bar{d} c \bar{b}}^{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4},
 \end{equation}
 where the subleading terms are suppressed at high energy.
 
 As a result, in the forward limit the amplitude satisfies the relation
 \begin{equation}
-    \mathcal{M}^{\lambda_1 \lambda_2}_{ab} (u, t=0)
-    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}} (s, t=0).
+    \mathcal{M}^{\lambda_1 \lambda_2}_{abcd} (u, t=0)
+    = \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{d} c \bar{b}} (s, t=0).
 \end{equation}
 This observation allows us to simplify the analysis of positivity bounds for massive non-Abelian vectors. In particular, for an even number of subtractions, it is convenient to define the symmetrized arcs as
 \begin{equation}
     a_{2n}(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
     \frac{
-        \mathcal{M}^{\lambda_1 \lambda_2}_{ab}(s,t)
-        + \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}}(s,t)
+        \mathcal{M}^{\lambda_1 \lambda_2}_{abcd}(s,t)
+        + \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{d} c \bar{b}}(s,t)
     }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{2n+1}}.
 \end{equation}
 
@@ -517,9 +517,11 @@ Similarly, for an odd number of substractions the symmetrized arc can be defined
 \begin{equation}
     a_{2n + 1}(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
     \frac{
-        \mathcal{M}^{\lambda_1 \lambda_2}_{ab}(s,t)
-        - \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}}(s,t)
+        \mathcal{M}^{\lambda_1 \lambda_2}_{abcd}(s,t)
+        - \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{d} c \bar{b}}(s,t)
     }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{2n + 2}}.
 \end{equation}
 
 From the results in \Cref{sec:nopos}, it follows that, if the crossed amplitude has a branch cut at high energies,  there are no positive sum rules for these symmetrized arcs and an odd number of substractions.
+
+\section{Applications to $WW$ Scattering}

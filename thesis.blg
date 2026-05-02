@@ -1,11 +1,11 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'thesis.blg'
-[56] biber-darwin:342> INFO - === Sat May  2, 2026, 19:55:48
+[56] biber-darwin:342> INFO - === Sat May  2, 2026, 19:59:59
 [68] Biber.pm:421> INFO - Reading 'thesis.bcf'
 [133] Biber.pm:999> INFO - Using all citekeys in bib section 0
-[143] Biber.pm:4487> INFO - Processing section 0
-[150] Biber.pm:4678> INFO - Looking for bibtex file 'preamble/references/bibliography.bib' for section 0
-[151] bibtex.pm:1713> INFO - LaTeX decoding ...
+[142] Biber.pm:4487> INFO - Processing section 0
+[149] Biber.pm:4678> INFO - Looking for bibtex file 'preamble/references/bibliography.bib' for section 0
+[150] bibtex.pm:1713> INFO - LaTeX decoding ...
 [159] bibtex.pm:1519> INFO - Found BibTeX data source 'preamble/references/bibliography.bib'
 [209] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
 [209] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
