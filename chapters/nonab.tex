@@ -122,6 +122,7 @@ We can also rewrite the full amplitude in terms of this symmetric amplitude, and
 \end{equation}
 
 \subsection{No Positive Odd-Substracted Sum Rules}
+\label{sec:nopos}
 
 Each of the isospin subamplitudes $\mathcal{M}_I$ admits a partial-wave expansion analogous to that given in \Cref{eq:highendecomp},
 \begin{equation}
@@ -497,17 +498,28 @@ As a result, in the forward limit the amplitude satisfies the relation
 \end{equation}
 This observation allows us to simplify the analysis of positivity bounds for massive non-Abelian vectors. In particular, for an even number of subtractions, it is convenient to define the symmetrized arcs as
 \begin{equation}
-    a_n(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
+    a_{2n}(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
     \frac{
         \mathcal{M}^{\lambda_1 \lambda_2}_{ab}(s,t)
         + \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}}(s,t)
-    }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{1 + n}}.
+    }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{2n+1}}.
 \end{equation}
 
 
 Using the same standard dispersion relation arguments used in \Cref{chap:positivity}, one finds that in the forward limit these coefficients satisfy
 \begin{equation}
-    a_n(0) \geq 0, 
+    a_{2n}(0) \geq 0, 
     \qquad 
-    a_n(0) \leq \frac{a_{n-2}(0)}{\left(\Lambda^2 - 2m^2\right)^2}.
+    a_{2n}(0) \leq \frac{a_{2n-2}(0)}{\left(\Lambda^2 - 2m^2\right)^2}.
 \end{equation}
+
+Similarly, for an odd number of substractions the symmetrized arc can be defined as 
+\begin{equation}
+    a_{2n + 1}(t) = \frac{1}{2} \oint \frac{ds}{2 \pi i} \,
+    \frac{
+        \mathcal{M}^{\lambda_1 \lambda_2}_{ab}(s,t)
+        - \mathcal{M}^{\lambda_1 \bar{\lambda}_2}_{a \bar{b}}(s,t)
+    }{\left(s - 2m^2 + \tfrac{t}{2}\right)^{2n + 2}}.
+\end{equation}
+
+From the results in \Cref{sec:nopos}, it follows that, if the crossed amplitude has a branch cut at high energies,  there are no positive sum rules for these symmetrized arcs and an odd number of substractions.
