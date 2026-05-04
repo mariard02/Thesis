@@ -121,6 +121,15 @@ We can also rewrite the full amplitude in terms of this symmetric amplitude, and
     \label{eq:nonabscalar}
 \end{equation}
 
+For completness, it is also possible to do this same procedure to study $s \leftrightarrow u$ crosssing. For this case, the crossing matrix will be 
+$$
+X' = \begin{pmatrix}
+    \frac{1}{3} & 1 & \frac{5}{3} \\
+    \frac{1}{3} & \frac{1}{2} & -\frac{5}{6} \\
+    \frac{1}{3} & -\frac{1}{2} & \frac{1}{6}
+    \end{pmatrix}.
+$$
+
 \subsection{No Positive Odd-Substracted Sum Rules}
 \label{sec:nopos}
 
@@ -174,7 +183,7 @@ a & b & c
     \mathcal{M}_1 \\
     \mathcal{M}_2
 \end{pmatrix}.  $$
-Thus, in order to construct a positive-definite sum rule with $n$ subtractions, we must determine coefficients $a$, $b$, and $c$ such that all components of the vector
+Thus, in order to construct a positive-definite sum rule with an odd number of substractions $n$, we must determine coefficients $a$, $b$, and $c$ such that all components of the vector
 \begin{equation}
     \begin{pmatrix}
         a & b & c
@@ -186,30 +195,16 @@ Thus, in order to construct a positive-definite sum rule with $n$ subtractions, 
         0 & 1 & 0 \\
         0 & 0 & 1
     \end{pmatrix}
-    + (-1)^n \mathbb{X}
+    - \mathbb{X}
     \right)
 \end{equation}
 are non-negative.
 
-For an even number of subtractions, a convenient basis of such positive combinations is given by
-\begin{equation}
-    \frac{2}{3}\mathcal{M}_2 + \frac{1}{3}\mathcal{M}_0,
-\end{equation}
-\begin{equation}
-    \frac{1}{2}\mathcal{M}_2 + \frac{1}{2}\mathcal{M}_1,
-\end{equation}
-and
-\begin{equation}
-    \mathcal{M}_2.
-\end{equation}
-
-Among the physical amplitudes whose arcs are positive are, for instance, $+- \to +-$ and $00 \to 00$.
-
-By contrast, for an odd number of subtractions, it is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non-vanishing combination satisfying the non-negativity condition above. Therefore, when $n$ is odd, there are no non-trivial linear combinations of isospin amplitudes whose arc contributions are manifestly positive definite.
+It is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non-vanishing combination satisfying the non-negativity condition above. Therefore, when $n$ is odd, there are no non-trivial linear combinations of isospin amplitudes whose arc contributions are manifestly positive definite.
 
 If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}$ that, under crossing, is related to $\hat{\mathcal{M}}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
 
-This situation is realised, for instance, in the $+ - \to + -$ channel for fixed-$u$ dispersion relations, this is, after implementing the $t \leftrightarrow u$ crossing transformation. In this case, if the crossed process $++ \to ++$ is analytic at high energies, only the $s$-channel discontinuity contributes, allowing positivity bounds to be established even for an odd number of subtractions. 
+This situation is realised, for instance, in the $+ - \to - +$ channel for fixed-$u$ dispersion relations, this is, after implementing the $s \leftrightarrow t$ crossing transformation. In this case, if the crossed process $++ \to ++$ is analytic at high energies, only the $s$-channel branch cut contributes, allowing positivity bounds to be established even for an odd number of subtractions. 
 \begin{Todo}
     Explicar N infinity
 \end{Todo}
@@ -460,7 +455,27 @@ In general, this matrix is not diagonal, implying that crossing transformations 
 
 Finally, the same procedure used to obtain \(\mathcal{M}_2^I(s, t)\) can be applied to construct \(\mathcal{M}_3^I(s, u)\), which is obtained as the crossed version of \(\mathcal{M}_1^I(t, u)\) under \( s \leftrightarrow t \).
 
+It is important to emphasize that, although each subamplitude contains 25 structures, this does not imply that there are 75 independent structures in total. The reason is that some structures of different subamplitudes are related by crossing symmetry.
+
+To see this explicitly, let us consider the following combination of structures in the subamplitude $\mathcal{M}_1(t,u)$:
+\begin{equation}
+E_{(1)2} + E_{(1)3} = \varepsilon_1 \cdot \varepsilon_3 \; \varepsilon_2 \cdot \varepsilon_4 \, .
+\end{equation}
+
+Now, we apply the crossing transformation $s \leftrightarrow u$. Under this operation, the subamplitude $\mathcal{M}_1(t,u)$ is mapped into $\mathcal{M}_2(s,t)$. Importantly, this transformation does not change the explicit form of the tensor structure, and we obtain
+\begin{equation}
+E_{(2)2} + E_{(2)3} = \varepsilon_1 \cdot \varepsilon_3 \; \varepsilon_2 \cdot \varepsilon_4 \, .
+\end{equation}
+
+Therefore, we arrive at the relation
+\begin{equation}
+E_{(1)2} + E_{(1)3} = E_{(2)2} + E_{(2)3} \, .
+\end{equation}
+
+This shows that these four structures are not independent: one of them can be written as a linear combination of the others. As a result, only three linearly independent combinations can be constructed from this set.
+
 \section{Positivity Bounds in the Forward Limit}
+\label{sec:forwardlimit}
 In order to relate amplitudes in different channels, it is convenient to project the subamplitudes onto a basis of definite color structures. 
 Concretely, crossing can be written as
 \begin{equation}
@@ -475,7 +490,7 @@ In the high-energy, small-angle regime ($m^2,\, t \ll s$), the crossing matrix s
     \tilde{X}_{\lambda'_1 \lambda'_2 \lambda'_3 \lambda'_4}^{\lambda_1 \lambda_2 \lambda_3 \lambda_4} (s, t)
     \propto \prod_{i} \left( \frac{\sqrt{|t|}\, m}{s} \right)^{|\lambda_i - \lambda'_i|}.
 \end{equation}
-This expression shows that helicity-changing contributions ($\lambda_i \neq \lambda'_i$) are parametrically suppressed in the forward limit.
+This expression shows that helicity-changing contributions ($\lambda_i \neq \lambda'_i$) are suppressed in the forward limit.
 
 We can focus on elastic amplitudes of the form
 \begin{equation}
@@ -524,4 +539,18 @@ Similarly, for an odd number of substractions the symmetrized arc can be defined
 
 From the results in \Cref{sec:nopos}, it follows that, if the crossed amplitude has a branch cut at high energies,  there are no positive sum rules for these symmetrized arcs and an odd number of substractions.
 
+\begin{Todo}
+    Fixed $u$? (Longitudinals)
+\end{Todo}
+
 \section{Applications to $WW$ Scattering}
+We now turn to the process $W^+ W^- \to W^+ W^-$. However, since our goal is to apply the methods introduced in \Cref*{sec:forwardlimit}, it is more convenient to consider instead the process $W^+ W^- \to W^- W^+$. In this configuration, the amplitude is invariant under $s \leftrightarrow u$ crossing, allowing us to avoid relying on additional scattering channels with different external states.
+
+Our aim is to derive constraints on deviations from the Standard Model under different assumptions about the number of subtractions. We begin by considering a setup closely resembling the Standard Model, but with couplings and masses treated as independent parameters rather than fixed by electroweak symmetry breaking. Under different assumptions about the high-energy behaviour of the amplitude, we will obtain constraints on these parameters.
+
+We will then extend the analysis by including dimension-six beyond-the-Standard-Model (BSM) operators and examine how the resulting constraints are modified.
+\subsection{Beyond the Standard Model}
+
+\subsection{Higher Order Operators}
+
+\subsection{Odd Substractions}

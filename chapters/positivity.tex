@@ -121,7 +121,7 @@ In particular, from now on we will make extensive use of the fact that the funct
 
 \section{Dispersion Relations}
 \label{sec:dispersion}
-We start by defining the $n-$substracted arc as
+We start by defining the $n-$substracted arc as \autocite{Caron-Huot:2020cmc}
 \begin{equation}
     a_n(t) = \frac{1}{2 \pi i} \oint_\mathcal{C} \frac{ds}{s-2m^2} \frac{\mathcal{M}(s, t)}{[(s-2m^2)(s+t-2m^2)]^{n/2}},
 \end{equation}
@@ -410,7 +410,7 @@ Now,
 \end{equation}
 By minimizing $B$ keeping the positivity condition on $F'(s,J)$ we find the optimal upper bound for $\tilde{g}_n$.
 
-Problems of this type can be formulated as semidefinite programs and solved numerically using the \texttt{SDPB} solver. In practice, \texttt{SDPB} takes as input a set of polynomial matrices whose positivity must be enforced over a given domain and returns the optimal value of a linear objective function subject to these positivity constraints.
+Problems of this type can be formulated as semidefinite programs and solved numerically using the \texttt{SDPB} solver (\autocite{Simmons-Duffin:2015qma}, \autocite{Landry:2019qug}). In practice, \texttt{SDPB} takes as input a set of polynomial matrices whose positivity must be enforced over a given domain and returns the optimal value of a linear objective function subject to these positivity constraints.
 
 To implement this procedure numerically, we must introduce a truncation. First, we retain only a finite number of null constraints. Second, the positivity condition must hold for all even spins $J$, but numerically we can only impose it up to a maximum value $J_{\text{max}}$. In addition, to improve convergence, it is useful to include constraints at parametrically large values of $J$, such as $100\,J_{\text{max}}$ or even $10^5\,J_{\text{max}}$. As we will discuss in later sections, the inclusion of sufficiently large spin values is crucial for achieving convergence.
 
@@ -453,7 +453,7 @@ Maximizing $A + B \tilde{g}_3^0$, we find the optimal lower bound for $\tilde{g}
 Having established how to constrain the allowed parameter space of the Wilson coefficients in an EFT, we now turn to a different question. Suppose we extend the theory by allowing the exchange of intermediate resonances with mass $m_i$ and spin $J_i$.
 
 The presence of such a state modifies the analytic structure of the amplitude by introducing additional poles. In particular, the propagator of the intermediate particle generates a pole at $s=m_i^2$, while crossing symmetry implies a corresponding pole at $s = -m_i^2 - t$.
-In the vicinity of the poles, the amplitude factorizes and takes the universal form
+In the vicinity of the poles, the amplitude factorizes and takes the universal form \autocite{Huang:2025icl}
 \begin{equation}
     \mathcal{M}(s,t)|_{s \to m_i^2} \sim -\frac{\lambda_i^2 \mathcal{P}_{J_i}\left(1 + \frac{2t}{s}\right)}{s - m_i^2},
 \end{equation}
