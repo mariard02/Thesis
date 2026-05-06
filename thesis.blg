@@ -1,15 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'thesis.blg'
-[56] biber-darwin:342> INFO - === Mon May  4, 2026, 16:53:00
-[67] Biber.pm:421> INFO - Reading 'thesis.bcf'
-[133] Biber.pm:999> INFO - Using all citekeys in bib section 0
-[143] Biber.pm:4487> INFO - Processing section 0
-[149] Biber.pm:4678> INFO - Looking for bibtex file 'preamble/references/bibliography.bib' for section 0
-[151] bibtex.pm:1713> INFO - LaTeX decoding ...
-[161] bibtex.pm:1519> INFO - Found BibTeX data source 'preamble/references/bibliography.bib'
-[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[218] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[218] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[222] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[225] bbl.pm:779> INFO - Output to thesis.bbl
+[57] biber-darwin:342> INFO - === Wed May  6, 2026, 12:16:10
+[69] Biber.pm:421> INFO - Reading 'thesis.bcf'
+[136] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[146] Biber.pm:4487> INFO - Processing section 0
+[153] Biber.pm:4678> INFO - Looking for bibtex file 'preamble/references/bibliography.bib' for section 0
+[154] bibtex.pm:1713> INFO - LaTeX decoding ...
+[166] bibtex.pm:1519> INFO - Found BibTeX data source 'preamble/references/bibliography.bib'
+[246] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[246] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[246] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[246] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[251] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[256] bbl.pm:779> INFO - Output to thesis.bbl
+[256] Biber.pm:132> WARN - ISBN '978-1-107-03473-0, 978-1-107-03473-0' in entry 'Schwartz:2014sze' is invalid - run biber with '--validate_datamodel' for details.
+[256] Biber.pm:134> INFO - WARNINGS: 1

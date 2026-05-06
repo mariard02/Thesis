@@ -1,0 +1,85 @@
+\chapter{Applications to $WW$ scattering}
+\label{chap:ww}
+
+We now turn to the process $W^+ W^- \to W^+ W^-$.  
+In this configuration, the $s \leftrightarrow u$ crossed amplitude has the same color configuration, so it is not necessary to study additional scattering channels with different external states.
+
+Our aim is to derive constraints on deviations from the Standard Model under different assumptions about the number of subtractions. We begin by considering a setup closely resembling the Standard Model, but with couplings and masses treated as independent parameters rather than fixed by electroweak symmetry breaking. Under different assumptions about the high-energy behaviour of the amplitude, we will obtain constraints on these parameters.
+
+We will then extend the analysis by including dimension-six beyond-the-Standard-Model (BSM) operators and examine how the resulting constraints are modified.
+
+\begin{Todo}
+    Explicar el setup. No tengo ni idea de cómo hacerlo... 
+    \begin{itemize}
+        \item Before symmetry breaking
+        \item Cambiar acoplamientos 
+        \item Sacar fotón $\rightarrow$ $\cos \theta = 1, \sin \theta = 0$
+    \end{itemize}
+\end{Todo}
+
+\section{Beyond the Standard Model}
+
+\begin{Todo}
+    No me gusta nada el título de esta sección
+\end{Todo}
+
+\begin{Todo}
+    Explicar cambio acoplamientos y masas
+\end{Todo}
+
+First, we assume that the scattering amplitude satisfies $0$-th substracted dispersion relations. This requirement is equivalent to demanding that the amplitude vanishes in the high-energy limit, \( s \to \infty \).
+
+Under this assumption, the relevant arc coefficients are:
+\begin{align}
+    a_0^{(00)} &= -6 g_Z^2 + g_W^2 \left[ 5 + g_h^2 \left( 2 - \frac{m_h^2}{m^2} \right) \right] 
+    + \frac{g_Z^2}{m^4 m_Z^2} \left(-4m^6 - 2m^2 m_Z^4 + m_Z^6 \right), \\
+    a_1^{(00)} &= 0, \\
+    a_2^{(00)} &= \frac{-g_W^2 + g_Z^2}{m^4}, \\
+    a_0^{(++)} &= 2g_W^2 - \frac{g_Z^2 (2m^2 + m_Z^2)}{m_Z^2}, \\
+    a_1^{(++)} &= - \frac{g_Z^2}{m_Z^2}, \\
+    a_2^{(++)} &= 0.
+\end{align}
+
+From the positivity of the twice-subtracted arc, \( a_2^{(00)} \geq 0 \), one obtains
+\[
+\frac{g_Z^2}{g_W^2} \geq 1,
+\]
+which provides a lower bound on the coupling of the \( Z \) boson to the \( W \) boson.
+
+Combining this with the positivity of the 0-th substracted arc, \( a_0^{(++)} \geq 0 \), yields
+\[
+m_Z^2 \geq 2 m^2.
+\]
+This bound already excludes the Standard Model configuration, where \( m_Z^2 = m^2 \).
+To complete the analysis, we use the relation between once- and 0-th substracted arcs,
+\[
+\left| a_1^{(++)} \right| (\Lambda^2 - 2m^2) \leq a_0^{(++)}.
+\]
+This inequality leads to two distinct regimes:
+\[
+\begin{cases}
+    \dfrac{g_Z^2}{g_W^2} \leq 2 
+    \;\Rightarrow\;
+    \dfrac{m_Z^2}{\Lambda^2} \geq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}}, \\[1em]
+
+    \dfrac{g_Z^2}{g_W^2} \geq 2 
+    \;\Rightarrow\;
+    \dfrac{m_Z^2}{\Lambda^2} \leq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}} < 0.
+\end{cases}
+\]
+The second regime, \( g_Z^2 \geq 2 g_W^2 \), is clearly inconsistent. In the first regime, \( g_Z^2 \leq 2 g_W^2 \), there appears to be a viable window. However, combining this with the bound \( g_Z^2 \geq g_W^2 \) implies
+\[
+m_Z^2 \geq \Lambda^2,
+\]
+this is the \( Z \)-boson resonance would lie above the cutoff. This is problematic, as the effective theory cannot reliably describe physics above \( \Lambda \). This is summarized in figure 
+\begin{Todo}
+    Añadir figura
+\end{Todo}
+Therefore, the process under consideration is not consistent with unsubtracted dispersion relations. However, it remains compatible with twice-subtracted dispersion relations, provided that \( g_Z^2 \geq g_W^2 \).
+
+This condition is reminiscent of the role of the three-point coupling in ensuring the cancellation of the \( s^2 \) growth in the scattering amplitude for \( W^+_L W^-_L \rightarrow W^+_L W^-_L \). Such a cancellation is required by gauge invariance and follows from Ward identities \autocite{Lee:1977eg}.
+
+\section{Higher Order Operators}
+We are interested now in understanding 
+
+\section{Odd Number of Substractions}
