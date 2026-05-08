@@ -78,7 +78,65 @@ Therefore, the process under consideration is not consistent with unsubtracted d
 
 This condition is reminiscent of the role of the three-point coupling in ensuring the cancellation of the \( s^2 \) growth in the scattering amplitude for \( W^+_L W^-_L \rightarrow W^+_L W^-_L \). Such a cancellation is required by gauge invariance and follows from Ward identities \autocite{Lee:1977eg}.
 
-\section{Higher Order Operators}
-We are interested now in 
+\section{Higher-Order Operators}
+
+\begin{Todo}
+    Explicar qué significan los operadores! No tengo ni idea
+\end{Todo}
+
+We now investigate how these bounds are modified in the presence of dimension-six operators. To this end, we fix both the $ZW^+W^-$ and Higgs--$W$ couplings to their Standard Model values. In this setup, the relevant arcs in the forward limit take the form
+\begin{align}
+    a_0^{(++)} &= \frac{g_W^2}{m_Z^2} \Big( -1 + 2 (c_{HW} + c_W) m^2 \Big) (2 m^2 - m_Z^2), \\
+    a_1^{(++)} &= \frac{g_W^2}{m_Z^2} \Big( -1 + 2 (c_{HW} + c_W) m^2 \Big),\\
+    a_2^{(++)} &= 0, \\
+    a_0^{(+0)} &= -4g_W^2 \Big( -1 + 2 c_{HW} m^2 + c_W (-2 + 4m^2) \Big).
+\end{align}
+
+Imposing the positivity condition
+\[
+|a_1^{(++)}|(\Lambda^2 - 2m^2) \leq a_0^{(++)},
+\]
+leads to two possible cases:
+\[
+\begin{cases}
+    -1 + 2 (c_{HW} + c_W)m^2 < 0
+    &\Rightarrow\quad m_Z^2 \geq \Lambda^2, \\[4pt]
+    -1 + 2 (c_{HW} + c_W)m^2 > 0
+    &\Rightarrow\quad m_Z^2 \leq 0.
+\end{cases}
+\]
+
+Both conditions are physically inconsistent. Therefore, the scattering amplitude remains incompatible with the existence of a 0-th subtracted dispersion relation, even after including dimension-six operators.
+
+The only remaining possibility corresponds to the degenerate case
+\[
+-1 + 2 (c_{HW} + c_W)m^2 = 0.
+\]
+
+In this regime, the condition $a_0^{(+0)} \geq 0$ implies that the physically allowed region with $m^2 \leq \Lambda^2$ exists only for
+\[
+c_W \geq 0.
+\]
+Then, no bounds arise whenever
+\[
+\begin{cases}
+    c_{HW} + c_W = \dfrac{1}{2m^2}, \\[6pt]
+    c_W \geq 0.
+\end{cases}
+\]
+
+The corresponding region in the $(c_W,c_{HW})$ plane is shown in \Cref{fig:dim6line}.
+
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{../figures/dim6.png}
+    \end{center}
+    \caption{Region in the $(c_W,c_{HW})$ parameter space for which there are no bounds in the spectrum.}
+    \label{fig:dim6line}
+\end{figure}
+
+\subsection{Finite $t$}
+To complete our analysis for the degenerate case, we include the information from the first order in $t$.
+
 
 \section{Odd Number of Substractions}
