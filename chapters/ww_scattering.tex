@@ -118,14 +118,15 @@ In this regime, the condition $a_0^{(+0)} \geq 0$ implies that the physically al
 c_W \geq 0.
 \]
 Then, no bounds arise whenever
-\[
+\begin{equation}
 \begin{cases}
     c_{HW} + c_W = \dfrac{1}{2m^2}, \\[6pt]
     c_W \geq 0.
 \end{cases}
-\]
+\label{eq:dim6cond}
+\end{equation}
 
-The corresponding region in the $(c_W,c_{HW})$ plane is shown in \Cref{fig:dim6line}.
+The corresponding region in the $(c_W,c_{HW})$ plane is shown in \Cref*{fig:dim6line}.
 
 \begin{figure}[hbtp]
     \begin{center}
@@ -135,8 +136,42 @@ The corresponding region in the $(c_W,c_{HW})$ plane is shown in \Cref{fig:dim6l
     \label{fig:dim6line}
 \end{figure}
 
-\subsection{Finite $t$}
-To complete our analysis for the degenerate case, we include the information from the first order in $t$.
+\subsection{Finite \texorpdfstring{$t$}{t}}
+
+To complete the analysis of the degenerate case, we now incorporate the information arising at first order in $t$. For longitudinal polarizations, and using the relation between $c_W$ and $c_{HW}$, we obtain
+\begin{equation}
+m_0^{(00)} =
+\frac{-1 + (c_H - 8 c_W)m^2 - c_W m_h^2}
+{2\left[-1 + (c_H - 2c_W)m^2\right](2m^2 - m_h^2)}.
+\end{equation}
+Note that there are no contributions of $m_Z$. This is a consequence of the condition in \Cref*{eq:dim6cond}, which cancels those terms.
+
+\begin{Todo}
+    Add trumpet plots.
+\end{Todo}
+
+As discussed in \Cref{sec:finitet}, positivity requires this quantity to satisfy
+\begin{equation}
+    -\frac{1}{2(1-2m^2)}
+    \leq
+    m_0^{(00)}
+    \leq
+    \frac{1}{2(-1+\sqrt{2})(1-2m^2)} .
+\end{equation}
+
+\begin{Todo}
+    Update the bounds including the finite-$t$ corrections.
+\end{Todo}
+
+We determine numerically the regions of parameter space compatible with these bounds. The resulting allowed regions are displayed in \Cref{fig:many6dim}.
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/dim6_finitet.pdf}
+    \caption{Regions of parameter space compatible with the positivity bounds for $t = 0.1\,\Lambda^2$.}
+    \label{fig:many6dim}
+\end{figure}
+
+Several features emerge from the numerical analysis. Most notably, the positivity constraints strongly restrict the relative size of the Wilson coefficients. In particular, we observe that the allowed values of $c_W$ cannot become parametrically larger than those of $c_H$. 
 
 
 \section{Odd Number of Substractions}
