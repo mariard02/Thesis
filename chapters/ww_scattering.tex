@@ -173,5 +173,41 @@ We determine numerically the regions of parameter space compatible with these bo
 
 Several features emerge from the numerical analysis. Most notably, the positivity constraints strongly restrict the relative size of the Wilson coefficients. In particular, we observe that the allowed values of $c_W$ cannot become parametrically larger than those of $c_H$. 
 
+We finds no bounds if the amplitude only verifies twice substracted dispersion relations.
 
-\section{Odd Number of Substractions}
+\section{Odd Number of Subtractions}
+So far, we have derived bounds for $WW$ scattering under the assumption that the amplitude satisfies unsubtracted dispersion relations. It is also interesting to investigate the bounds that arise when the amplitude instead satisfies once-subtracted dispersion relations. However, as discussed in \Cref*{sec:nopos}, no positive sum rules exist for amplitudes with an even number of subtractions.
+
+There is nevertheless a way to circumvent this limitation: one can assume that the crossed amplitude appearing in the dispersive integral is analytic. In that case, the crossed channel does not contribute to the sum rules, making it possible to obtain positivity bounds even in the presence of an odd number of subtractions.
+
+In this section, we consider fixed-$u$ dispersion relations. The crossed process is then $W^+ W^+ \to W^+ W^+$, corresponding to the isospin-$2$ amplitude. Assuming analyticity for this channel is equivalent to treating the $W$ bosons as composite states made of isospin-$1/2$ constituents in the large-$N$ limit \autocite{Albert:2022oes}.
+
+\begin{Todo}
+    Mencionar que en el SM verifica dr 1?
+\end{Todo}
+\subsection{Beyond the Standard Model}
+Keeping only the Standard Model operators, the relevant arcs in the $u \to 0$ limit are 
+\begin{align}
+    a_1^{(00)} &= g_Z\frac{4 g_W^2}{m_Z^2}, \\
+    a_2^{(00)} &= (g_Z - 1) \frac{g_W^2}{2m^4}.
+\end{align}
+From $a_2^{(00)} \geq 0$, we recover the condition that $g_Z \geq 1$. Using the relation $a_2 (\Lambda^2 - 2m^2) \leq a_1$, we find the upper bounds for $g_Z$ shown in figure \Cref*{fig:nomz}.
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width = 0.85 \textwidth]{../figures/1sub_nomZ.png}
+    \end{center}
+    \caption{Upper bound in $g_Z$ for different values of $m^2$ and $m_Z^2$. The dashed lines represent the value of $m^2$ starting from which the theory is not consistent, as it gives $g_Z < 0$.}
+    \label{fig:nomz}
+\end{figure}
+As we can see, taking the cutoff to the infinity implies that $g_Z = 1$, which brings us back to the Standard Model.
+
+It is also interesting to study the $m_Z^2 = m^2$ case. For this, the allowed region for $m^2$ is shown in \Cref*{fig:withmz}. The cutoff can not be taken to $\infty$ unless we choose the Standard Model coupling, $g_Z$. If $m^2/ \Lambda^2 \geq 1/10$, the setup is consistent for any value of $g_Z$. Adding information from the first order in $u$ does not improve these bounds.
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width = 0.85 \textwidth]{../figures/image.png}
+    \end{center}
+    \caption{Allowed region for $m^2$ for differentes values in $g_Z$.}
+    \label{fig:withmz}
+\end{figure} 
+\subsection{Higher-Order Operators}
+Lastly, we study how these bounds are modified when including 6 dimensional operators. The relevant arcs are 
