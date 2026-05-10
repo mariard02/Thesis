@@ -56,26 +56,31 @@ To complete the analysis, we use the relation between once- and 0-th substracted
 \left| a_1^{(++)} \right| (\Lambda^2 - 2m^2) \leq a_0^{(++)}.
 \]
 This inequality leads to two distinct regimes:
-\[
-\begin{cases}
-    \dfrac{g_Z^2}{g_W^2} \leq 2 
-    \;\Rightarrow\;
-    \dfrac{m_Z^2}{\Lambda^2} \geq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}}, \\[1em]
-    \dfrac{g_Z^2}{g_W^2} \geq 2 
-    \;\Rightarrow\;
-    \dfrac{m_Z^2}{\Lambda^2} \leq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}} < 0
-\end{cases}
-\]
+\begin{equation}
+    \begin{cases}
+        \dfrac{g_Z^2}{g_W^2} \leq 2 
+        \;\Rightarrow\;
+        \dfrac{m_Z^2}{\Lambda^2} \geq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}}, \\[1em]
+        \dfrac{g_Z^2}{g_W^2} \geq 2 
+        \;\Rightarrow\;
+        \dfrac{m_Z^2}{\Lambda^2} \leq \dfrac{ \frac{g_Z^2}{g_W^2} }{2 - \frac{g_Z^2}{g_W^2}} < 0
+    \end{cases}
+    \label{eq:casesint}
+\end{equation}
 The second regime, \( g_Z^2 \geq 2 g_W^2 \), is clearly inconsistent. In the first regime, \( g_Z^2 \leq 2 g_W^2 \), there appears to be a viable window. However, combining this with the bound \( g_Z^2 \geq g_W^2 \) implies
 \[
 m_Z^2 \geq \Lambda^2,
 \]
-this is the \( Z \)-boson resonance would lie above the cutoff. This is problematic, as the effective theory cannot reliably describe physics above \( \Lambda \). This is summarized in figure 
-\begin{Todo}
-    Añadir figura
-\end{Todo}
-Therefore, the process under consideration is not consistent with unsubtracted dispersion relations. However, it remains compatible with twice-subtracted dispersion relations, provided that \( g_Z^2 \geq g_W^2 \).
+this is the \( Z \)-boson resonance would lie above the cutoff. This is problematic, as the effective theory cannot reliably describe physics above \( \Lambda \). This is summarized in \Cref*{fig:boundsintersction}.
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width= 0.85 \textwidth]{../figures/bounds_intersection.png}
+    \end{center}
+    \label{fig:boundsintersction}
+    \caption{Intersection of the different bounds that appear when assuming the $WW$ scattering fulfils 0-th substracted dispersion relations. The regions highlighted in red correspond to the bounds arising from \Cref*{eq:casesint}, while the region highlighted in blue corresponds to $g_Z^2 \geq 1$.}
+\end{figure}
 
+Therefore, the process under consideration is not consistent with unsubtracted dispersion relations. However, it remains compatible with twice-subtracted dispersion relations, provided that \( g_Z^2 \geq g_W^2 \).
 This condition is reminiscent of the role of the three-point coupling in ensuring the cancellation of the \( s^2 \) growth in the scattering amplitude for \( W^+_L W^-_L \rightarrow W^+_L W^-_L \). Such a cancellation is required by gauge invariance and follows from Ward identities \autocite{Lee:1977eg}.
 
 \section{Higher-Order Operators}
@@ -146,10 +151,6 @@ m_0^{(00)} =
 \end{equation}
 Note that there are no contributions of $m_Z$. This is a consequence of the condition in \Cref*{eq:dim6cond}, which cancels those terms.
 
-\begin{Todo}
-    Add trumpet plots.
-\end{Todo}
-
 As discussed in \Cref{sec:finitet}, positivity requires this quantity to satisfy
 \begin{equation}
     -\frac{1}{2(1-2m^2)}
@@ -167,7 +168,7 @@ We determine numerically the regions of parameter space compatible with these bo
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width=\textwidth]{../figures/dim6_finitet.pdf}
-    \caption{Regions of parameter space compatible with the positivity bounds for $t = 0.1\,\Lambda^2$.}
+    \caption{Regions of parameter space compatible with the positivity bounds for $t = 0.1\,\Lambda^2$, including dimension 4 and dimension 6 operators and assuming that $c_{HW} + c_{W} = 1/(2m^2)$ and $c_W \geq 0$.}
     \label{fig:many6dim}
 \end{figure}
 
@@ -191,12 +192,15 @@ Keeping only the Standard Model operators, the relevant arcs in the $u \to 0$ li
     a_1^{(00)} &= g_Z\frac{4 g_W^2}{m_Z^2}, \\
     a_2^{(00)} &= (g_Z - 1) \frac{g_W^2}{2m^4}.
 \end{align}
+\begin{Question}
+    Estos arcos están bien???
+\end{Question}
 From $a_2^{(00)} \geq 0$, we recover the condition that $g_Z \geq 1$. Using the relation $a_2 (\Lambda^2 - 2m^2) \leq a_1$, we find the upper bounds for $g_Z$ shown in figure \Cref*{fig:nomz}.
 \begin{figure}[hbtp]
     \begin{center}
         \includegraphics[width = 0.85 \textwidth]{../figures/1sub_nomZ.png}
     \end{center}
-    \caption{Upper bound in $g_Z$ for different values of $m^2$ and $m_Z^2$. The dashed lines represent the value of $m^2$ starting from which the theory is not consistent, as it gives $g_Z < 0$.}
+    \caption{Upper bound in $g_Z$ for different values of $m^2$ and $m_Z^2$, only including dimension 4 operators and assuming the isospin-2 amplitude is analytical. The dashed lines represent the value of $m^2$ starting from which the theory is not consistent, as it gives $g_Z < 0$.}
     \label{fig:nomz}
 \end{figure}
 As we can see, taking the cutoff to the infinity implies that $g_Z = 1$, which brings us back to the Standard Model.
@@ -206,8 +210,22 @@ It is also interesting to study the $m_Z^2 = m^2$ case. For this, the allowed re
     \begin{center}
         \includegraphics[width = 0.85 \textwidth]{../figures/image.png}
     \end{center}
-    \caption{Allowed region for $m^2$ for differentes values in $g_Z$.}
+    \caption{Allowed region for $m^2$ for differentes values in $g_Z$, only including dimension 4 operators and assuming the isospin-2 amplitude is analytical.}
     \label{fig:withmz}
 \end{figure} 
 \subsection{Higher-Order Operators}
-Lastly, we study how these bounds are modified when including 6 dimensional operators. The relevant arcs are 
+Lastly, we study how these bounds are modified when including 6 dimensional operators. Still in the $m^2 = m_Z^2$ regime, the relevant arcs are 
+\begin{Todo}
+    Escribir arcos.
+\end{Todo}
+Using that the arcs are positive, that they verify that $a_2^{(00)} (\Lambda^2 - 2m^2) \leq a_1^{(00)}$ and boundness of the contribution of the first order in $u$, we can numerically solve the system of inequations to find bounds on $m^2$ and $m_h^2$. The allowed region is shown in \Cref*{fig:dim6withu}.
+\begin{Todo}
+    Comprobar que no me falta ninguna relación
+\end{Todo}
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{../figures/dim6withu.pdf}
+    \end{center}
+    \caption{Allowed region for $m$ and $m_H$ independently of the value of the 6 dimensional coefficients, assuming the isospin-2 amplitude is analytical.}
+    \label{fig:dim6withu}
+\end{figure}
