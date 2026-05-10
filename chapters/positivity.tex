@@ -101,15 +101,11 @@ the imaginary part of the full amplitude, which will play a central role in what
     \Im \mathcal{M}(s,t,u)
     =
     \sum_{\substack{J \,\text{even}}}
-    16\pi(2J+1)\,
+    16\pi(2J+1)\,  \sqrt{ \frac{s}{s-4m^2} } \;
     \mathcal{P}_J\left(1+\frac{2t}{s-4m^2}\right)
     \rho_J(s).
     \label{eq:highendecomp}
 \end{equation}
-
-\begin{Todo}
-Comprobar raíz
-\end{Todo}
     
 
 Finally, the unitarity condition on the $S$-matrix translates into the following bounds on the spectral densities:
@@ -181,9 +177,12 @@ This result is remarkable, as it provides a second, independent way of computing
 \label{sec:sumrules}
 
 Inserting in the expansion from \Cref*{eq:highendecomp}, the arcs can be rewritten as 
-\begin{eqnarray}
-    a_n(t) = \sum_{J \text{ even}} \int_{\Lambda^2-2m^2}^{\infty} \frac{d\hat{s}}{\hat{s}}  32  (2 J + 1) \mathcal{P}_J \left( 1 + \frac{2t}{\hat{s}-2m^2} \right) \frac{2\hat{s}+t}{\hat{s}+t}\frac{\rho_J(\hat{s})}{[\hat{s}(\hat{s}+t)]^{n/2}}.
-\end{eqnarray}
+\begin{equation}
+    \begin{split}
+    a_n(t) = \sum_{J \text{ even}} \int_{\Lambda^2-2m^2}^{\infty} \frac{d\hat{s}}{\hat{s}} \, 32 \, (2 J + 1) \sqrt{\frac{\hat{s} + 2m^2}{\hat{s} - 2m^2}} \cdot \\
+    \cdot \mathcal{P}_J \left( 1 + \frac{2t}{\hat{s}-2m^2} \right) \frac{2\hat{s}+t}{\hat{s}+t}\frac{\rho_J(\hat{s})}{[\hat{s}(\hat{s}+t)]^{n/2}}.
+    \end{split}
+    \end{equation}
 It is convenient to introduce the following high-energy average of a function $F(s,J)$:
 \begin{eqnarray}
     \langle F(\hat{s},J) \rangle
@@ -210,6 +209,7 @@ With this notation, the arcs  can be compactly written as
     }{
         [\hat{s}(\hat{s}+t)]^{n/2}
     }
+    \sqrt{\frac{\hat{s} + 2m^2}{\hat{s} - 2m^2}}
     \right\rangle
     \;\geq\; 0 \, .
 \end{equation}
