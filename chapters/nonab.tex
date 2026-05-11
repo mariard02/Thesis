@@ -532,8 +532,36 @@ Similarly, for an odd number of substractions the symmetrized arc can be defined
 
 From the results in \Cref{sec:nopos}, it follows that, if the crossed amplitude has a branch cut at high energies,  there are no positive sum rules for these symmetrized arcs and an odd number of substractions.
 
-\subsection{Finite $t$}
-\label{sec:finitet}
-\begin{Todo}
-    Add trumpets
-\end{Todo}
+When $-t \ll \Lambda^2$, $m^2 \ll \Lambda^2$, or both, it can be shown \autocite{Bellazzini:2025shd} \autocite{Bellazzini:2023nqj} that  
+\begin{equation}
+    \frac{|a_n(t)|}{a_n(0)}
+    \leq
+    \frac{1}{\left(1+\frac{t/2}{\Lambda^2-2m^2}\right)^{n+1}}.
+    \label{eq:trumpets}
+\end{equation}
+
+For sufficiently small values of $t/\Lambda^2$, the arcs can be approximated by their Taylor expansion around $t=0$,
+\[
+a_n(t)\simeq a_n(0)+mt,
+\]
+where $m$ denotes the slope. This corresponds to a straight line in the $(t,a_n)$ plane. The condition in \Cref*{eq:trumpets} then implies that this line must remain within the region bounded by
+\[
+\pm \frac{1}{\left(1+\frac{t/2}{\Lambda^2-2m^2}\right)^{n+1}}.
+\]
+Fixing a value of $t$ therefore yields both an upper and a lower bound on the slope $m$, as illustrated in \Cref*{fig:trumpets_bounds}.
+\begin{figure}[hbtp]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{../figures/trumpets_2sd.png}
+\end{center}
+\caption{Bounds on $a(t)$ for $m^2/\Lambda^2 = 0.1$, $-t/\Lambda^2 = 0.1$ and two substractions. The red region indicates the range of values of $a(t)/a_0$ consistent with \Cref*{eq:trumpets}. The upper boundary corresponds to the minimum allowed value of $m$, while the lower boundary corresponds to the maximum allowed value.}
+\label{fig:trumpets_bounds}
+\end{figure}
+
+In particular, for a fixed $t_0$, the lower bound on $m$ is obtained from the straight line tangent to the upper curve at $t = 0$, namely
+\begin{equation}
+m_{\text{min}} = \frac{-1 - n}{2 (\Lambda^2 - 2 m^2)}.
+\end{equation}
+Similarly, the upper bound on $m$ corresponds to the slope of the straight line passing through $(0,1)$ and the lower curve evaluated at $t = t_0$, given by
+\begin{equation}
+m_{\text{max}} = -\frac{\left(\frac{t_0}{2 \Lambda^2 - 4 m^2}+1\right)^{-n-1}+1}{t_0}.
+\end{equation}
