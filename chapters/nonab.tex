@@ -126,7 +126,7 @@ X' = \begin{pmatrix}
     \end{pmatrix}.
 $$
 
-\subsection{No Positive Odd-Substracted Sum Rules}
+\subsection{Positive Odd-Substracted Sum Rules}
 \label{sec:nopos}
 
 Each of the isospin subamplitudes $\mathcal{M}_I$ admits a partial-wave expansion analogous to that given in \Cref{eq:highendecomp},
@@ -138,7 +138,7 @@ Each of the isospin subamplitudes $\mathcal{M}_I$ admits a partial-wave expansio
     \mathcal{P}_J\;\left(1+\frac{2t}{s-4m^2}\right)
     \rho_J^I(s).
 \end{equation}
-For the full amplitude to define a unitary $S$-matrix, each isospin channel must satisfy unitarity independently \autocite{Albert:2022oes}. It then follows that the corresponding partial-wave absorptive coefficients are non-negative,
+For the full amplitude to define a unitary $S$-matrix, each isospin channel must satisfy unitarity independently \autocite{Manohar:2008tc}. It then follows that the corresponding partial-wave absorptive coefficients are non-negative,
 \begin{equation}
     \rho_J^I(s)\geq 0.
 \end{equation}
@@ -155,6 +155,9 @@ Following the same procedure as in the abelian case, the $n$-subtracted dispersi
     \right].
     \label{eq:highennonab}
 \end{equation}
+\begin{Todo}
+    Corregir esto. Faltan partes imaginarias, cambiar el denominador...
+\end{Todo}
 
 In principle, we could now repeat the systematic analysis shown in \Cref{sec:sumrules} to derive general bounds on the Wilson coefficients and spectrum of these theories. This program is carried out in \autocite{Albert:2022oes}. In what follows, however, we will focus primarily on positivity constraints.
 
@@ -200,7 +203,32 @@ It is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non
 
 If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}$ that, under crossing, is related to $\hat{\mathcal{M}}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
 
-This situation is realised, for instance, in the $+ - \to + -$ channel for fixed-$u$ dispersion relations, this is, after implementing the $s \leftrightarrow t$ crossing transformation. In this case, if the crossed process $++ \to ++$ is analytic at high energies, only the $s$-channel branch cut contributes, allowing positivity bounds to be established even for an odd number of subtractions. 
+Another posibility is to go beyond the forward limit. Indeed, up to first order in $t$,
+\begin{Todo}
+    Escribir desarrollo
+\end{Todo}
+Thus, the first derivative of the arc is 
+\begin{equation}
+    \left. \frac{\partial a_n^I (t)}{\partial t} \right|_{t = 0} = ...
+\end{equation}
+\begin{Todo}
+    Escribir esta ecuación
+\end{Todo}
+We can focus specifically in the factor that accompanies the crossed channel contribution, which is.
+\begin{Todo}
+    Ecuación
+\end{Todo}
+Because $l \geq 0$ and $s \geq \Lambda^2 > 4m^2$, 
+\begin{Todo}
+    Relación. Revisar también límites integral... no quiero liarla con esto.
+\end{Todo}
+\begin{Todo}
+    Creo que tengo que demostrar
+\end{Todo}
+As we can see, the contribution from the crossed channel receives an extra minus sign, making it positive and making this equivalent to working with an even substracted arc. Thus,
+\begin{equation}
+    \left. \frac{\partial a_n (t)}{\partial t} \right|_{t = 0} \geq 0.
+\end{equation}
 
 \section{Parametrization of the Scattering Amplitude}
 
