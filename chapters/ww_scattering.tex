@@ -1,28 +1,13 @@
 \chapter{Applications to $WW$ scattering}
 \label{chap:ww}
+We now turn to the process $W^+ W^- \to W^+ W^-$. Our goal is to derive positivity constraints on departures from the Standard Model under different assumptions about the number of subtractions required in the dispersion relation.
 
-We now turn to the process $W^+ W^- \to W^+ W^-$.  Our aim is to derive constraints on deviations from the Standard Model under different assumptions about the number of subtractions. We begin by considering a setup closely resembling the Standard Model, but with couplings and masses treated as independent parameters rather than fixed by electroweak symmetry breaking. Under different assumptions about the high-energy behaviour of the amplitude, we will obtain constraints on these parameters.
+We begin by studying a phenomenological deformation of the Standard Model in which the masses and couplings entering the scattering amplitudes are treated as independent parameters, rather than being fixed by electroweak symmetry breaking and gauge invariance. From an effective field theory perspective, such deformations can be understood as the low-energy manifestation of higher-dimensional operators. By analysing the positivity bounds under different assumptions about the ultraviolet behaviour of the amplitude, we will obtain constraints on these effective parameters.
+We will then extend the analysis by explicitly including dimension-six beyond-the-Standard-Model (BSM) operators and study how the positivity constraints are modified in their presence.
 
-We will then extend the analysis by including dimension-six beyond-the-Standard-Model (BSM) operators and examine how the resulting constraints are modified.
+For simplicity, we consider the amplitudes in the limit $\sin\theta_{EW}=0$. In this regime, the electroweak gauge bosons satisfy $m_Z = m_W$, and the trilinear and quartic gauge couplings become equal, $g_Z = g_W$. We will relax these assumptions and explore the effects of allowing $m_Z$ and $g_Z$ to differ from their Standard Model values.
 
-\begin{Todo}
-    Explicar el setup. No tengo ni idea de cómo hacerlo... 
-    \begin{itemize}
-        \item Before symmetry breaking
-        \item Cambiar acoplamientos 
-        \item Sacar fotón $\rightarrow$ $\cos \theta = 1, \sin \theta = 0$
-    \end{itemize}
-\end{Todo}
-
-\section{Beyond the Standard Model}
-
-\begin{Todo}
-    No me gusta nada el título de esta sección
-\end{Todo}
-
-\begin{Todo}
-    Explicar cambio acoplamientos y masas
-\end{Todo}
+\section{Deformations of the Standard Model}
 
 First, we assume that the scattering amplitude satisfies $0$-th substracted dispersion relations. This requirement is equivalent to demanding that the amplitude vanishes in the high-energy limit, \( s \to \infty \).
 
@@ -82,11 +67,10 @@ This condition is reminiscent of the role of the three-point coupling in ensurin
 
 \section{Higher-Order Operators}
 
-\begin{Todo}
-    Explicar qué significan los operadores! No tengo ni idea
-\end{Todo}
+We now investigate how these bounds are modified in the presence of dimension-six operators. To this end, we fix both the $ZW^+W^-$ and Higgs--$W$ couplings to their Standard Model values, as well as the mass of the $Z$ boson. 
+We will consider the only three dimension 6 operators that affect $WW$ scattering, which will enter the amplitudes through the coefficients $c_H, c_{HW}$ and $c_{3W} $.
 
-We now investigate how these bounds are modified in the presence of dimension-six operators. To this end, we fix both the $ZW^+W^-$ and Higgs--$W$ couplings to their Standard Model values. In this setup, the relevant arcs in the forward limit take the form
+In this setup, the relevant arcs in the forward limit take the form
 \begin{align}
     a_0^{(++)} &= \frac{g_W^2}{m_Z^2} \Big( -1 + 2 (c_{HW} + c_W) m^2 \Big) (2 m^2 - m_Z^2), \\
     a_1^{(++)} &= \frac{g_W^2}{m_Z^2} \Big( -1 + 2 (c_{HW} + c_W) m^2 \Big),\\
@@ -139,8 +123,47 @@ The corresponding region in the $(c_W,c_{HW})$ plane is shown in \Cref*{fig:dim6
 \end{figure}
 
 \subsection{Finite \texorpdfstring{$t$}{t}}
+We now examine whether the fine-tuned regime remains consistent for finite values of $t$.
 
-To complete the analysis of the degenerate case, we now incorporate the information arising at first order in $t$. For longitudinal polarizations, and using the relation between $c_W$ and $c_{HW}$, we obtain
+Up to first order in $t$, the $++$ arc at zero substractions is given by
+\begin{equation}
+    \begin{aligned}
+    a_0^{(++)} = \frac{g_W^2}{m_Z^2} \Big[
+    & \big(-1 + 2 (c_{HW} + c_W)m^2\big)(2m^2 - m_Z^2) \\
+    & + \big(1 - 2 (c_{HW} + c_W)m^2 + 4 c_{3W} m_Z^2\big)\, t
+    \Big].
+    \end{aligned}
+\end{equation}
+In order for this regime to be compatible with \Cref{eq:trumpets}, we must therefore require either $c_{3W} = 0$ or $m_Z = 0$.
+
+We first analyze the case $c_{3W} = 0$. In this regime,
+\begin{equation}
+m_0^{(+0)} = \frac{2 \Lambda^2 - 3 m^2}{8 m^2 \left(m^2 - \Lambda^2\right)},
+\end{equation}
+which, as discussed in \Cref{sec:forwardlimit}, must satisfy
+\begin{equation}
+-\frac{1}{2(\Lambda^2 - 2m^2)}
+\leq
+m_0^{(+0)}
+\leq
+\frac{1}{2 \Lambda^2 - 4 m^2 + t} - \frac{2}{t}.
+\end{equation}
+
+We focus on the lower bound, since it is independent of $t$. Rewriting the constraint yields
+\begin{equation}
+\frac{2 \Lambda^2 - 3 m^2}{8 m^2 (m^2 - \Lambda^2)}
+- \frac{1}{2(\Lambda^2 - 2m^2)}
+\geq 0,
+\end{equation}
+which is satisfied only if
+\begin{equation}
+\frac{m^2}{\Lambda^2} \geq 0.229844.
+\end{equation}
+
+We therefore conclude that, if $c_{3W} = 0$, one cannot reach the limit $m = 0$.
+
+We can repeat this analysis for $c_{3W} \neq 0$.
+For longitudinal polarizations, using the relation between $c_W$ and $c_{HW}$ and imposing that $m_Z = 0$, we obtain
 \begin{equation}
 m_0^{(00)} =
 \frac{-1 + (c_H - 8 c_W)m^2 - c_W m_h^2}
@@ -148,7 +171,7 @@ m_0^{(00)} =
 \end{equation}
 Note that there are no contributions of $m_Z$. This is a consequence of the condition in \Cref*{eq:dim6cond}, which cancels those terms.
 
-As discussed in \Cref{sec:forwardlimit}, positivity requires this quantity to satisfy
+Positivity requires this quantity to satisfy
 \begin{equation}
     -\frac{1}{2(\Lambda^2-2m^2)}
     \leq
@@ -161,25 +184,22 @@ We determine numerically the regions of parameter space compatible with these bo
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width=\textwidth]{../figures/dim6_finitet.pdf}
-    \caption{Regions of parameter space compatible with the positivity bounds for $t = 0.1\,\Lambda^2$, including dimension 4 and dimension 6 operators and assuming that $c_{HW} + c_{W} = 1/(2m^2)$ and $c_W \geq 0$.}
+    \caption{Regions of parameter space compatible with the positivity bounds for $t =- 0.1\,\Lambda^2$, including dimension 4 and dimension 6 operators and assuming that $c_{HW} + c_{W} = 1/(2m^2)$ and $c_W \geq 0$.}
     \label{fig:many6dim}
 \end{figure}
 
 Several features emerge from the numerical analysis. Most notably, the positivity constraints strongly restrict the relative size of the Wilson coefficients. In particular, we observe that the allowed values of $c_W$ cannot become parametrically larger than those of $c_H$. 
 
-We finds no bounds if the amplitude only verifies twice substracted dispersion relations.
+We find no bounds if the amplitude only verifies twice substracted dispersion relations.
 
 \section{Odd Number of Subtractions}
 So far, we have derived bounds for $WW$ scattering under the assumption that the amplitude satisfies unsubtracted dispersion relations. It is also interesting to investigate the bounds that arise when the amplitude instead satisfies once-subtracted dispersion relations. However, as discussed in \Cref*{sec:nopos}, no positive sum rules exist for amplitudes with an even number of subtractions.
 
-There is nevertheless a way to circumvent this limitation: one can assume that the crossed amplitude appearing in the dispersive integral is analytic. In that case, the crossed channel does not contribute to the sum rules, making it possible to obtain positivity bounds even in the presence of an odd number of subtractions.
+There is still a way to circumvent this limitation: one can assume that the crossed amplitude appearing in the dispersive integral is analytic. In that case, the crossed channel does not contribute to the sum rules, making it possible to obtain positivity bounds even in the presence of an odd number of subtractions.
 
 In this section, we consider fixed-$u$ dispersion relations. The crossed process is then $W^+ W^+ \to W^+ W^+$, corresponding to the isospin-$2$ amplitude. Assuming analyticity for this channel is equivalent to treating the $W$ bosons as composite states made of isospin-$1/2$ constituents in the large-$N$ limit \autocite{Albert:2022oes}.
 
-\begin{Todo}
-    Mencionar que en el SM verifica dr 1?
-\end{Todo}
-\subsection{Beyond the Standard Model}
+\subsection{Deformations of the Standard Model}
 Keeping only the Standard Model operators, the relevant arcs in the $u \to 0$ limit are 
 \begin{align}
     a_1^{(00)} &= 4  \left( \frac{g_Z^2 - g_W^2}{m^2} + \frac{g_Z^2 }{m_Z^2} \right), \\
@@ -204,18 +224,27 @@ It is also interesting to study the $m_Z^2 = m^2$ case. For this, the allowed re
     \label{fig:withmz}
 \end{figure}
 \subsection{Higher-Order Operators}
-Lastly, we study how these bounds are modified when including 6 dimensional operators. Still in the $m^2 = m_Z^2$ regime, the relevant arcs are 
-\begin{Todo}
-    Escribir arcos.
-\end{Todo}
-Using that the arcs are positive, that they verify that $a_2^{(00)} (\Lambda^2 - 2m^2) \leq a_1^{(00)}$ and boundness of the contribution of the first order in $u$, we can numerically solve the system of inequations to find bounds on $m^2$ and $m_h^2$. The allowed region is shown in \Cref*{fig:dim6withu}.
-\begin{Todo}
-    Comprobar que no me falta ninguna relación
-\end{Todo}
+Lastly, we study how these bounds are modified by the inclusion of dimension-6 operators. Restricting again to the regime $m^2 = m_Z^2$, the relevant arcs, up to first order in $u$, are
+\begin{equation}
+    a_1^{(00)}(u) = -g_W^2\frac{ 16 m^4 (c_{HW}+c_{W})-4 m^2 \left(3 c_W m_Z^2+2\right)+c_W
+    m_Z^2 \left(4 m_h^2+u \right) }{2 m^2 m_Z^2}.
+\end{equation}
+\begin{equation}
+    a_2^{(00)}(u) = 0, 
+\end{equation}
+
+Using that
+\[
+0 \leq a_2^{(00)}(\Lambda^2 - 2m^2) \leq a_1^{(00)},
+\]
+and imposing boundedness of the contribution linear in $u$, we numerically solve the resulting system of inequalities to derive constraints on $m^2$ and $m_h^2$.
+
+We find that, once dimension-6 operators are included, no absolute bounds on the spectrum can be obtained independently of the higher-order operators. Nevertheless, as shown in \Cref{fig:space_no_branch_cut}, positivity still imposes non-trivial restrictions on the allowed parameter space for different choices of the $W$ and Higgs boson masses.
+
 \begin{figure}[hbtp]
     \begin{center}
-        \includegraphics[width=0.75\textwidth]{../figures/dim6withu.pdf}
+        \includegraphics[width=\textwidth]{../figures/no_branch_cut_space.pdf}
     \end{center}
-    \caption{Allowed region for $m$ and $m_H$ independently of the value of the 6 dimensional coefficients, assuming the isospin-2 amplitude is analytical.}
-    \label{fig:dim6withu}
+    \caption{Regions of parameter space compatible with the positivity bounds for different values of $m$ and $m_h$, for $u=-0.1\Lambda^2$, assuming once-subtracted dispersion relations and analyticity of the isospin-2 channel.}
+    \label{fig:space_no_branch_cut}
 \end{figure}
