@@ -146,18 +146,17 @@ For the full amplitude to define a unitary $S$-matrix, each isospin channel must
 
 Following the same procedure as in the abelian case, the $n$-subtracted dispersion relation for $2 \rightarrow 2$ scattering of non-abelian scalar fields takes the form
 \begin{equation}
-    a_n^I(t)
-    = \frac{1}{2 \pi i} \oint_{\mathcal{C}} \frac{ds}{\hat{s}^{n+1}} \,\mathcal{A}^I(\hat{s}, t)
-    = \frac{1}{\pi} \int_{\Lambda^2 - 2m^2}^{\infty} d\hat{s}
-    \left[
-        \frac{\mathcal{A}^I(\hat{s}, t)}{\hat{s}^{n+1}}
-        + (-1)^n X^{I}_{\ J}\,\frac{\mathcal{A}^J(\hat{s}, t)}{(\hat{s}+u)^{n+1}}
-    \right].
+    \begin{split}
+        a_n^I(t)
+        &= \frac{1}{2 \pi i} \oint_{\mathcal{C}} \frac{ds}{\hat{s}^{n+1}} \, \mathcal{A}^I(\hat{s}, t) \\
+        &= \frac{1}{\pi} \int_{\Lambda^2 - 2m^2}^{\infty} d\hat{s}
+        \left[
+            \frac{\Im \mathcal{A}^I(\hat{s}, t)}{\hat{s}^{n+1}}
+            + (-1)^n X^{I}_{\ J}\,\frac{\Im \mathcal{A}^J(\hat{s}, t)}{(\hat{s}+u)^{n+1}}
+        \right].
+    \end{split}
     \label{eq:highennonab}
 \end{equation}
-\begin{Todo}
-    Corregir esto. Faltan partes imaginarias, cambiar el denominador...
-\end{Todo}
 
 In principle, we could now repeat the systematic analysis shown in \Cref{sec:sumrules} to derive general bounds on the Wilson coefficients and spectrum of these theories. This program is carried out in \autocite{Albert:2022oes}. In what follows, however, we will focus primarily on positivity constraints.
 
@@ -202,33 +201,6 @@ are non-negative.
 It is straightforward to verify that no choice of $a$, $b$, and $c$ yields a non-vanishing combination satisfying the non-negativity condition above. Therefore, when $n$ is odd, there are no non-trivial linear combinations of isospin amplitudes whose arc contributions are manifestly positive definite.
 
 If one nevertheless wishes to study the case of an odd number of subtractions, some positivity statements may still be recovered under stronger assumptions. Consider an amplitude $\mathcal{M}$ that, under crossing, is related to $\hat{\mathcal{M}}$. If the crossed amplitude is analytical at high energies, this is, there are no resonances, then only the $s$-channel cut contributes to the dispersion relation. In that case, if $\mathcal{M}$ can be written as a linear combination of isospin amplitudes with positive coefficients, the corresponding arc integrals with an odd number of subtractions are also positive.
-
-Another posibility is to go beyond the forward limit. Indeed, up to first order in $t$,
-\begin{Todo}
-    Escribir desarrollo
-\end{Todo}
-Thus, the first derivative of the arc is 
-\begin{equation}
-    \left. \frac{\partial a_n^I (t)}{\partial t} \right|_{t = 0} = ...
-\end{equation}
-\begin{Todo}
-    Escribir esta ecuación
-\end{Todo}
-We can focus specifically in the factor that accompanies the crossed channel contribution, which is.
-\begin{Todo}
-    Ecuación
-\end{Todo}
-Because $l \geq 0$ and $s \geq \Lambda^2 > 4m^2$, 
-\begin{Todo}
-    Relación. Revisar también límites integral... no quiero liarla con esto.
-\end{Todo}
-\begin{Todo}
-    Creo que tengo que demostrar
-\end{Todo}
-As we can see, the contribution from the crossed channel receives an extra minus sign, making it positive and making this equivalent to working with an even substracted arc. Thus,
-\begin{equation}
-    \left. \frac{\partial a_n (t)}{\partial t} \right|_{t = 0} \geq 0.
-\end{equation}
 
 \section{Parametrization of the Scattering Amplitude}
 

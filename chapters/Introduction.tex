@@ -3,13 +3,13 @@
 
 \section{Effective Field Theories and Modern Particle Physics}
 
-One of the central goals of modern high-energy physics is to understand the fundamental structure of Nature at the shortest distance scales. The Standard Model (SM) of particle physics provides an extraordinarily successful description of electromagnetic, weak, and strong interactions, with predictions verified experimentally to an impressive degree of precision. The discovery of the Higgs boson at the Large Hadron Collider (LHC) completed the particle content predicted by the Standard Model and confirmed the mechanism of electroweak symmetry breaking.
+One of the central goals of modern high-energy physics is to understand the fundamental structure of Nature at the shortest distance scales. The Standard Model (SM) of particle physics provides an extraordinarily successful description of electromagnetic, weak, and strong interactions, with predictions, such as the anomalous magnetic dipole moment of the electron \autocite{Fan:2022eto}, verified experimentally to an impressive degree of precision. The discovery of the Higgs boson at the Large Hadron Collider (LHC) completed the particle content predicted by the Standard Model and confirmed the mechanism of electroweak symmetry breaking.
 
-Despite this success, however, there are compelling reasons to believe that the Standard Model cannot represent the final theory of fundamental interactions. The existence of dark matter, the origin of neutrino masses, the baryon asymmetry of the Universe, and the hierarchy problem all point towards the existence of new physics beyond the Standard Model. At the same time, direct experimental evidence for new particles or interactions has remained elusive.
+Despite this success, however, there are compelling reasons to believe that the Standard Model cannot represent the final theory of fundamental interactions. The existence of dark matter and dark energy, the origin of neutrino masses, the baryon asymmetry of the Universe, and the hierarchy problem all point towards the existence of new physics beyond the Standard Model. At the same time, direct experimental evidence for new particles or interactions has remained elusive.
 
-This situation has motivated a shift in perspective within particle physics. Rather than focusing exclusively on explicit ultraviolet (UV) models, much of modern research seeks to understand what can be learned about possible new physics independently of its microscopic realization. Effective field theories (EFTs) provide the natural framework for this program.
+This situation has motivated a shift in perspective within particle physics. Traditionally, the focus was on building explicit models describing physics at very high energies. These are known as ultraviolet (UV) models, and their goal is to provide a complete, fundamental description of interactions at very short distances, that is, in the microscopic regime. However, it is now increasingly recognised that many signals of new physics could arise from a wide variety of mechanisms, each with different microscopic degrees of freedom. For this reason, modern research does not limit itself to proposing a specific UV model. Instead, it seeks to understand what can be learned about possible new physics without specifying its microscopic realisation, this is, without fixing which particles or fundamental interactions produce it at ultra-short scales. 
 
-The philosophy of effective field theory is based on the observation that physical phenomena occurring at low energies are largely insensitive to the detailed structure of the ultraviolet completion. Instead, the effects of heavy degrees of freedom can be encoded through higher-dimensional operators involving only the low-energy fields. The resulting effective theory remains predictive because contributions from these operators are suppressed by powers of the cutoff scale.
+Effective field theories (EFTs) provide the natural framework for this approach, as they allow us to parametrise the effects of new physics in terms of low-energy operators, independently of whatever complete model underlies the high-energy behaviour. The effects of heavy degrees of freedom can be encoded through higher-dimensional operators involving only the low-energy fields. The resulting effective theory remains predictive because contributions from these operators are suppressed by powers of the cutoff scale, which represents the energy threshold up to which the EFT is valid. Above it, the unknown microscopic degrees of freedom (the UV completion) become relevant and can no longer be ignored.
 
 Schematically, an effective Lagrangian can be written as
 \[
@@ -26,25 +26,11 @@ where \(\Lambda\) denotes the characteristic scale of new physics and the Wilson
 
 One of the main strengths of EFTs is their universality. Many different ultraviolet completions may generate identical low-energy operators, allowing one to study broad classes of new physics scenarios in a systematic and model-independent manner. This framework has become especially important in collider physics, where precision measurements can be interpreted in terms of constraints on effective operators without specifying a particular UV model.
 
-However, this apparent freedom also raises a profound question: not every low-energy effective theory can arise from a consistent ultraviolet completion. Although an EFT may respect all low-energy symmetries, the Wilson coefficients appearing in the effective Lagrangian cannot take arbitrary values. Fundamental properties of the UV theory impose nontrivial constraints on the allowed parameter space and spectrum of the EFT.
-
-Understanding these constraints constitutes one of the main motivations of this thesis.
-
-\section{From low-energy observables to ultraviolet consistency}
-
-The modern understanding of effective field theories goes far beyond their role as
-mere computational tools. EFTs also provide a bridge between experimentally accessible
-observables and the fundamental principles governing ultraviolet physics.
-
-The key observation is that low-energy scattering amplitudes retain information about
-the consistency properties of the ultraviolet completion. General principles such as
-unitarity, locality, Lorentz invariance, causality, and analyticity impose highly
-nontrivial constraints on the structure of scattering amplitudes, even when the
-microscopic theory itself remains unknown.
+However, this apparent freedom also raises a profound question: not every low-energy effective theory can arise from a consistent ultraviolet completion. Although an EFT may respect all low-energy symmetries, the Wilson coefficients appearing in the effective Lagrangian cannot take arbitrary values. General principles such as unitarity, locality, Lorentz invariance and causality of the UV completition impose highly nontrivial constraints on the structure of scattering amplitudes, even when the microscopic theory itself remains unknown.
 
 This perspective is especially important because ultraviolet physics is often extremely
 difficult to study directly. While weakly coupled theories can usually be analyzed
-perturbatively, strongly interacting quantum field theories generally require genuinely
+perturbatively, strongly interacting quantum field theories generally require
 nonperturbative methods. Quantum chromodynamics (QCD) provides the paradigmatic
 example of this situation. Although the QCD Lagrangian is conceptually simple,
 many physically relevant observables, such as hadron masses or low-energy scattering
@@ -57,61 +43,27 @@ including precision determinations of hadronic spectra and matrix elements.
 Nevertheless, such methods are computationally demanding and not always easily
 generalizable to arbitrary ultraviolet theories beyond the Standard Model.
 
-This difficulty becomes particularly relevant in scenarios involving strongly interacting
-electroweak symmetry breaking or other nonperturbative extensions of the Standard
-Model. In these cases, obtaining direct information about the microscopic UV theory
-may be technically inaccessible, while explicit calculations often depend strongly on
-the details of the underlying dynamics.
-
-These challenges motivate the search for universal constraints that can be derived
-independently of the precise structure of the ultraviolet completion. Rather than
-attempting to solve the full microscopic theory, one instead asks what general
-properties any consistent relativistic quantum field theory must satisfy.
-
-This idea has led to the development of positivity bounds, which constitute one of the
-most powerful modern approaches for constraining effective field theories. Positivity
-bounds establish rigorous inequalities on the Wilson coefficients of EFT operators by
-exploiting the analytic structure of scattering amplitudes together with the positivity
+This idea has led to the development of positivity bounds, which constitute a method for constraining effective field theories. Positivity bounds establish rigorous inequalities on the Wilson coefficients of EFT operators by exploiting the analytic structure of scattering amplitudes together with the positivity
 of physical cross sections.
-
-Remarkably, these constraints do not rely on the detailed dynamics of the UV theory.
-Instead, they follow only from broad and fundamental assumptions such as unitarity,
-analyticity, locality, Lorentz invariance, and causality. In this sense, positivity bounds
-provide a direct connection between low-energy observables and the consistency
-requirements of possible ultraviolet completions.
 
 The study of positivity bounds is therefore especially attractive because it allows one
 to obtain nontrivial information about unknown high-energy physics using only
 infrared data and general principles of quantum field theory. In recent years,
-positivity methods have attracted considerable attention in particle physics,
+positivity methods have attracted considerable in particle physics,
 gravitational physics, cosmology, and amplitudes research, providing a powerful
 framework capable of excluding low-energy theories that cannot admit a standard
 ultraviolet completion.
 
 \section{Electroweak symmetry breaking and vector boson scattering}
 
-Although positivity bounds can be applied to many different systems, one of their most important applications concerns the electroweak sector and vector boson scattering.
+Positivity bounds can be used to study many different systems, and an interesting application is the electroweak sector and vector boson scattering.
 
-The scattering of longitudinally polarized electroweak gauge bosons occupies a privileged position in particle physics because it directly probes the mechanism responsible for electroweak symmetry breaking.
-Historically, this process played a fundamental role in the development of the Standard Model. It was realized that, in the absence of additional contributions, longitudinal \(W\)-boson scattering amplitudes grow with energy and eventually violate perturbative unitarity at scales around the TeV scale. The Higgs mechanism resolves this problem within the Standard Model through cancellations among different diagrams that soften the high-energy behavior of the amplitudes.
+The scattering of longitudinally polarized electroweak gauge bosons occupies a privileged position in particle physics, because it played a fundamental role in the development of the Standard Model. It was realized that, in the absence of additional contributions, longitudinal \(W\)-boson scattering amplitudes grow with energy and eventually violate perturbative unitarity at scales around the TeV scale. The Higgs mechanism resolves this problem within the Standard Model through cancellations among different diagrams that soften the high-energy behavior of the amplitudes.
 
-However, even after the discovery of the Higgs boson, the question is not completely settled. Current experimental measurements still allow for deviations from the Standard Model Higgs sector. It remains possible that the observed Higgs boson does not fully unitarize vector boson scattering and that additional new physics contributes at higher energies.
-\begin{Todo}
-    Reference needed
-\end{Todo}
+However, even after the discovery of the Higgs boson, the question is not completely settled. Current experimental measurements still allow for deviations from the Standard Model Higgs sector. It remains possible that the observed Higgs boson does not fully unitarize vector boson scattering and that additional new physics contributes at higher energies \autocite{Lee:1977eg}.
 
-From the EFT perspective, this possibility is naturally encoded through higher-dimensional operators modifying vector boson interactions. These operators often induce amplitudes that grow rapidly with energy, making vector boson scattering especially sensitive to positivity constraints.
-
+From the EFT perspective, this possibility is naturally encoded through higher-dimensional operators modifying vector boson interactions. 
 Consequently, positivity bounds provide a powerful theoretical tool for constraining possible extensions of the electroweak sector independently of the details of the ultraviolet completion.
-
-\section{Positivity bounds and dispersion relations}
-
-The derivation of positivity bounds relies fundamentally on dispersion relations. Dispersion relations connect low-energy scattering amplitudes to integrals over their high-energy behavior using analyticity in the complex Mandelstam plane.
-
-Under suitable assumptions regarding locality, causality, polynomial boundedness, and unitarity, one can express derivatives of the scattering amplitude as integrals over positive spectral densities. These relations lead directly to inequalities constraining the coefficients appearing in the low-energy expansion.
-
-Different forms of dispersion relations can be constructed depending on the asymptotic behavior of the amplitudes and the number of subtractions required for convergence. The resulting positivity conditions may involve forward-limit amplitudes, finite-\(t\) corrections, or more general crossing-symmetric combinations.
-The presence of resonances also modifies the structure of the amplitudes and can significantly affect the positivity conditions. Understanding how resonant contributions enter dispersion relations therefore becomes an important part of the analysis.
 
 \section{Goals and Scope of this Work}
 
@@ -122,16 +74,12 @@ We investigate how imposing stronger ultraviolet convergence properties than tho
 We then shift our attention to electroweak \(WW\) scattering, adopting a more
 phenomenological perspective. We begin by considering modifications of the Standard Model couplings involving the electroweak gauge bosons, as well as deformations of the particle masses, which can be interpreted as the low-energy effects of higher-dimensional operators in the effective theory. We study how positivity bounds constrain these deviations and how the resulting constraints are modified once additional higher-order operators are included explicitly in the analysis. We will look for bounds that are independent of any operators, inspired by the results that exist already for gravitons and gravitinos. 
 
-\begin{Todo}
-    Aquí falta una cita.
-\end{Todo}
-
 \section{Structure of this Work}
 
-\Cref{chap:positivity} introduces the general formalism of positivity bounds. The analytic properties of scattering amplitudes are reviewed. Dispersion relations are derived, and the associated sum rules and null constraints are discussed. A method for constraining the couplings of certain resonances is also developed in detail.
+\Cref{chap:positivity} introduces the general formalism of positivity bounds. The analytic properties of scattering amplitudes are reviewed. Dispersion relations are derived, and the associated sum rules and null constraints are discussed. A method for constraining the couplings of resonances is also developed in detail.
 
 \Cref{chap:scalar} focuses on positivity bounds for massive scalar theories. The allowed spectrum for different subtraction schemes are studied, including \((-2)\)-subtracted and \(0\)-subtracted dispersion relations. Both analytic and numerical bounds on the spectrum are investigated.
 
 \Cref{chap:nonab} extends the analysis to non-Abelian massive vectors. The structure of the scattering amplitudes is developed in detail, together with the role of crossing symmetry and positivity in the forward limit.
 
-Finally, \Cref{chap:ww} applies these ideas to electroweak \(WW\) scattering and effective theories beyond the Standard Model. The implications of positivity bounds for higher-order operators and different subtraction schemes are discussed in the context of possible ultraviolet completions of the electroweak sector.
+Finally, \Cref{chap:ww} applies these ideas to electroweak \(WW\) scattering and effective theories beyond the Standard Model. The implications of positivity bounds for higher-order operators and different substraction schemes are discussed in the context of possible ultraviolet completions of the electroweak sector.
