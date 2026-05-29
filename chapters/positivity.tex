@@ -50,11 +50,15 @@ These singularities consist of isolated poles and branch cuts. Poles correspond 
 and extends along the positive real axis to $s \to +\infty$. As a consequence of crossing symmetry, this cut is accompanied by a corresponding branch cut in the $u$-channel. When viewed as a function of complex $s$, and for fixed $t<0$, the amplitude therefore exhibits two branch cuts along the real axis: one for $s \geq 4m^2$, and another for $s \leq 4m^2 - t$.
 At tree level, however, the amplitude does not exhibit branch cuts, as no multi-particle intermediate states can go on shell. 
 
-In an effective field theory, the amplitude is only expected to provide a valid description below a cutoff scale $\Lambda^2$, with $\Lambda^2 \geq 4m^2$. For the purposes of dispersion relations, the branch cuts associated with particle production are taken to lie above this cutoff, so that the low-energy expansion is valid away from the cuts. The typical analytical structure for an amplitude is shown in figure \textcolor{purple}{...}.
+In an effective field theory, the amplitude is only expected to provide a valid description below a cutoff scale $\Lambda^2$, with $\Lambda^2 \geq 4m^2$. For the purposes of dispersion relations, the branch cuts associated with particle production are taken to lie above this cutoff, so that the low-energy expansion is valid away from the cuts. The typical analytical structure for an amplitude is shown in \Cref*{fig:estructura}.
 
-\begin{Todo}
-    Insertar dibujo
-\end{Todo}
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width = 0.6 \textwidth]{../figures/base_estructura.png}
+    \end{center}
+    \caption{Typical analytical structure of the $2 \to 2$ scattering amplitude in an EFT. Pink lines represent branch cuts.}
+    \label{fig:estructura}
+\end{figure}
 
 \subsection{Low-Energy Expansion}
 The scattering amplitude admits a low-energy expansion that can be computed within an effective field theory valid below a cutoff scale. At tree level, and assuming that the EFT is weakly coupled up to the cutoff of the theory $\Lambda^2$, the amplitude can be written as the most general function symmetric under permutations of $s$, $t$ and $u$. In the case in which there is no exchange of other particles, the amplitude is
@@ -119,11 +123,15 @@ We start by defining the $n-$substracted arc as \autocite{Caron-Huot:2020cmc}
 \begin{equation}
     a_n(t) = \frac{1}{2 \pi i} \oint_\mathcal{C} \frac{ds}{s-2m^2} \frac{\mathcal{M}(s, t)}{[(s-2m^2)(s+t-2m^2)]^{n/2}},
 \end{equation}
-where $\mathcal{C}$ is the contour shown in figure 
-\begin{Todo}
-    Añadir figura
-\end{Todo}
-. For simplicity, from now on we will define the crossing symmetric variable $\hat{s} = s-2m^2$.
+where $\mathcal{C}$ is the contour shown in \Cref*{fig:contours}.
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width = 0.65 \textwidth]{../figures/contours.png}
+    \end{center}
+    \caption{Integration contour used to calculate the arcs. }
+    \label{fig:contours}
+\end{figure}
+For simplicity, from now on we will define the crossing symmetric variable $\hat{s} = s-2m^2$.
 The integrand is analytic inside the contour except for the poles on the real axis, that come both from the physical poles that are present in the amplitude and the ones that arise from the denominator. Thus, from Cauchy's residue theorem, we can write that 
 \begin{equation}
     a_n(t) = \sum_{\hat{s}_i \in \mathbb{R}} 
@@ -454,12 +462,15 @@ with $\lambda_i^2 \geq 0$. Our goal is to derive an upper bound on $\lambda_i^2$
 
 A possible approach to achieve this would be to repeat the analysis performed in \Cref{sec:dispersion}. First, one would explicitly write down the amplitude including the exchange of the resonances. Next, one would compute the corresponding arcs for this modified amplitude, which will now depend both on the Wilson coefficients and on the resonance couplings $\lambda_i^2$, and relate them to the appropriate heavy averages. Finally, one would combine the arcs in such a way that the contributions proportional to the Wilson coefficients cancel, yielding dispersion relations for the couplings.
 
-There is, however, a more elegant approach to this new problem. Instead of treating the resonance exchange explicitly within the low-energy amplitude and repeating the full dispersive analysis, we will regard the new poles introduced by the resonances as part of the high-energy contribution to the dispersion relations. In this framework, we use the fully analytic amplitude in \Cref{eq:eft}. The high-energy spectrum is then modeled as consisting of isolated poles together with a continuum that sets in above a scale $\Lambda'\.^2$, as shown in figure.
-\begin{Todo}
-Añadir figura
-\end{Todo}
+There is, however, a more elegant approach to this new problem. Instead of treating the resonance exchange explicitly within the low-energy amplitude and repeating the full dispersive analysis, we will regard the new poles introduced by the resonances as part of the high-energy contribution to the dispersion relations \autocite{Albert:2022oes}. In this framework, we use the fully analytic amplitude in \Cref{eq:eft}. The high-energy spectrum is then modeled as consisting of isolated poles together with a continuum that sets in above a scale $\Lambda'\.^2$, as shown in \Cref*{fig:hihgencont}.
+\begin{figure}[hbtp]
+    \begin{center}
+        \includegraphics[width = 0.6 \textwidth]{../figures/highen_contour.png}
+    \end{center}
+    \caption{Modification of the contour used to study the coupling to resonances bellow the cutoff. The green lines represent the contour in which only the contributions above the cutoff enter the high energy average, while the black line represents the contour in which the poles coming from resonances are included in the high energy average.}
+    \label{fig:hihgencont}
+\end{figure}
     
-
 This separation allows us to keep the low-energy expansion unchanged, while encoding the resonance effects directly in the high-energy spectral density, which is modified as 
 \begin{equation}
     \rho_J(s) \longrightarrow \rho'_J(s) + \sum_i \delta_{J, J_i} \lambda_i^2 \delta(s-m_i^2).
@@ -539,11 +550,7 @@ which can be compactly written as
 \hat{s} = \pm \abs{m_r^2 - 2m^2}.
 \]
 
-Therefore, depending on the sign of $m_r^2 - 2m^2$, only one of these poles contributes to the high-energy average, as shown in figure 
-\begin{Todo}
-    Añadir figura 
-\end{Todo}
-. The procedure described in the previous section applies without modification, the only required change being the replacement
+Therefore, depending on the sign of $m_r^2 - 2m^2$, only one of these poles contributes to the high-energy average. The procedure described in the previous section applies without modification, the only required change being the replacement
 \[
 \delta(s - m_r^2) \;\longrightarrow\; 
 \delta\big(s - \abs{m_r^2 - 2m^2}\big).
