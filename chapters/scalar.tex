@@ -76,6 +76,10 @@ This will be positive as long as
 \end{equation}
 this is, the setup will be consistent as long as the mass of the resonance is small enough. In particular, the case $m = M$ (when the mass of the resonance is the same as the mass of the outer legs) is consistent.
 
+\begin{Todo}
+    Preguntar esto.
+\end{Todo}
+
 \section{0-th subtracted dispersion relations}
 
 We now assume that the amplitude satisfies a 0-th subtracted dispersion relation. 
@@ -84,7 +88,7 @@ Nevertheless, we will show that it is still possible to derive systematic constr
 Moreover, we will use the method introduced in \Cref{sec:res} to numerically strengthen the bounds obtained analytically.
 
 In what follows, we consider $2 \to 2$ scattering of identical scalars, either massless or massive. 
-Our goal is to investigate the allowed mass of a spin-2 resonance exchanged in the amplitude, in the presence of additional possible spin-0 resonances.
+Our goal is to investigate the allowed mass of a spin-2 resonance exchanged in the amplitude, in the presence of additional possible spin-0 resonances. 
 
 \subsection{Analytic Bounds on the Spectrum}
 
@@ -101,12 +105,9 @@ The setup will be the following: suppose we have a certain cutoff $\Lambda^2$. B
 
 Consider a resonance of spin $J$ and mass $m_n$. As discussed in \Cref{sec:res}, it contributes to the amplitude as 
 \begin{equation}
-    \mathcal{M}(s, t) \sim -  \lambda_{J,n}^2 
-    \left( 
-    \frac{\mathcal{P}_J \left( 1 + \frac{2t}{s} \right)}{s - m_n^2} 
-    + 
-    \frac{\mathcal{P}_J \left( 1 + \frac{2t}{u} \right)}{u - m_n^2} 
-    \right).
+     \mathcal{M}(s, t)|_{s \to m_i^2} \sim  
+    \frac{ -  \lambda_{J,n}^2\mathcal{P}_J \left( 1 + \frac{2t}{m^2} \right)}{s - m_n^2} 
+    .
 \end{equation}
 Since 
 \begin{equation}
@@ -305,9 +306,9 @@ Now we are going to use the method described in \Cref{sec:res} to numerically fi
 $$
 \frac{\lambda_j^2}{m_j^2 g_0},
 $$
-where $\lambda_j^2$ is the coupling of the spin $j$ resonance to the scalar, $m_j$ its mass and $g_0$ the 4-point coupling.
+where $\lambda_j^2$ is the coupling of the spin $j$ resonance to the enternal scalar, $m_j$ its mass and $g_0$ the 4-point coupling. A spectrum inconsistency is equivalent to obtaining that $\lambda_j \to 0$ for a given mass.
 
-We start by considering massless external legs, and the exchange of a spin 0 resonance. The higher bound for 
+We start by considering massless external legs, and the exchange of a spin 0 resonance. The upper bound for 
 $$
 \frac{\lambda_0^2}{m_0^2 g_0}
 $$
@@ -358,7 +359,7 @@ The numerical results presented here provide a stronger version of this bound.
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width = 0.75\textwidth]{figures/two_res.png}
-    \caption{Bounds for a massive spin 2 resonance and a massive spin 0 resonance with massless scalar external legs, shown for different values of the spin 0 mass. The blue line represents the bound in the absence of spin 0 exchange.}
+    \caption{Bounds for a massive spin 2 resonance and a massive spin 0 resonance with massless scalar external legs, shown for different values of the spin 0 resonance.}
     \label{fig:massive_scalar_spin_23}
 \end{figure}
 
@@ -375,6 +376,10 @@ These features are also reproduced in the numerical results, and are particularl
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width = 0.75\textwidth]{figures/new_bounds.png}
-\caption{Bounds for a massive spin 2  resonance and a massive spin 0 resonance with massive scalar external legs, shown for different values of the external mass. The spin 0 resonance and the external legs have equal mass. The blue line represents the bound in the absence of spin 0 exchange.}
+\caption{Bounds for a massive spin 2  resonance and a massive spin 0 resonance with massive scalar external legs, shown for different values of the external mass. The spin 0 resonance and the external legs have equal mass. }
 \label{fig:2res}
 \end{figure}
+
+\begin{Todo}
+    Tabla resumen de resultados?
+\end{Todo}

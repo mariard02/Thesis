@@ -7,10 +7,53 @@ We will first study the elastic $2 \to 2$ scattering of identical massive scalar
 
 We start by reviewing the general properties that the scattering amplitude must satisfy if it originates from a consistent relativistic quantum theory. In particular, imposing unitarity, causality and crossing symmetry severely constrains the analytic structure of the amplitude in the complex Mandelstam plane. These properties will play a central role in the derivation of dispersion relations and, ultimately, in obtaining positivity constraints on the EFTs.
 
-Through the optical theorem, unitarity implies that the imaginary part of the scattering amplitude is strictly positive,
+The unitarity of the $S$-matrix is expressed as
 \begin{equation}
-\Im\mathcal{M}(s) > 0.
+S^\dagger S = 1,
 \end{equation}
+ Writing the $S$-matrix as
+\begin{equation}
+S = 1 + i T,
+\end{equation}
+where $T$ is the transition operator, unitarity leads to
+\begin{equation}
+(1 - i T^\dagger)(1 + i T) = 1.
+\end{equation}
+Expanding and simplifying, one obtains
+\begin{equation}
+T - T^\dagger = i\, T^\dagger T.
+\end{equation}
+
+Taking matrix elements between identical initial and final states $|i\rangle$ gives
+\begin{equation}
+\langle i | T - T^\dagger | i \rangle
+= i \sum_n \langle i | T^\dagger | n \rangle \langle n | T | i \rangle,
+\end{equation}
+where we have inserted a complete set of intermediate states $\sum_n |n\rangle \langle n| = 1$.
+
+The left-hand side can be written in terms of the scattering amplitude
+$\mathcal{M}(i \to i) \equiv \langle i | T | i \rangle$ as
+\begin{equation}
+\langle i | T - T^\dagger | i \rangle
+= \mathcal{M}(i \to i) - \mathcal{M}^*(i \to i)
+= 2i\, \mathrm{Im}\,\mathcal{M}(i \to i).
+\end{equation}
+
+Thus, we obtain the optical theorem,
+\begin{equation}
+2\, \mathrm{Im}\,\mathcal{M}(i \to i)
+= \sum_n |\mathcal{M}(i \to n)|^2.
+\end{equation}
+Therefore, the imaginary part of the scattering amplitude for identical external states must be positive:
+\begin{equation}
+\mathrm{Im}\,\mathcal{M}(i \to i)
+= \frac{1}{2} \sum_n |\mathcal{M}(i \to n)|^2 \ge 0.
+\end{equation}
+
+\begin{Todo}
+    Discuss why I don't use upper bound (?)
+\end{Todo}
+
 Moreover, unitarity leads to Froissart’s bound \autocite{PhysRev.123.1053}, which constrains the high-energy behavior of the amplitude. In particular, for fixed momentum transfer $t<0$ and sufficiently large center-of-mass energy $s$, the amplitude grows at most quadratically in $s$, so that
 \begin{equation}
 \lim_{s\to\infty} \frac{\mathcal{M}(s,t,u)}{s^{2}} = 0,
@@ -116,6 +159,10 @@ Finally, the unitarity condition on the $S$-matrix translates into the following
     \qquad \forall\, s > 0,\ \forall\, J \ \text{even}.
 \end{equation}
 From now on we will make extensive use of the fact that the functions $\rho_J(s)$ are positive definite. We remark that this is a consequence of the unitarity of the $S$ matrix, and will remain true even if we do not know any more information about the amplitude at high energies.
+
+\begin{Todo}
+    Upper bound
+\end{Todo}
 
 \section{Dispersion Relations}
 \label{sec:dispersion}
@@ -315,7 +362,7 @@ contributions must combine in such a way that their weighted integral vanishes.
 Null constraints therefore restrict the allowed distribution of heavy states in 
 spin and mass.
 
-Moreover, null constraints play a crucial role in numerically deriving bounds on Wilson coefficients. Because the Wilson coefficients themselves are given by positive 
+Moreover, null constraints play a crucial role in deriving bounds on Wilson coefficients. Because the Wilson coefficients themselves are given by positive 
 heavy averages of specific kernels, the existence of vanishing averages for 
 related kernels allows one to relate or eliminate certain spin contributions. 
 
@@ -449,16 +496,17 @@ Maximizing $A + B \tilde{g}_3^0$, we find the optimal lower bound for $\tilde{g}
     \label{fig:g3g4}
 \end{figure}
 
-\section{Adding Resonances}
+\section{Constraints on the Spectrum}
 \label{sec:res}
-Having established how to constrain the allowed parameter space of the Wilson coefficients in an EFT, we now turn to a different question. Suppose we extend the theory by allowing the exchange of intermediate resonances with mass $m_i^2 < \Lambda^2$ and spin $J_i$.
+Having established how to constrain the allowed parameter space of the Wilson coefficients in an EFT, we now turn to a complementary question. Suppose we extend the theory by allowing for the exchange of intermediate resonances with masses $m_i^2 < \Lambda^2$ and spin $J_i$. Positivity constraints restrict the local behaviour of the EFT amplitude, while the exchange of higher-spin states controls its high-energy growth. In particular, the exchange of a particle of spin $J$ typically induces contributions to the amplitude that grow with energy as $s^{2J}$. 
+This suggests that positivity bounds may, in turn, impose non-trivial constraints on the spectrum of higher-spin states that can be consistently coupled to the low-energy theory.
 
 The presence of such a state modifies the analytic structure of the amplitude by introducing additional poles. In particular, the propagator of the intermediate particle generates a pole at $s=m_i^2$, while crossing symmetry implies a corresponding pole at $s = -m_i^2 - t$.
 In the vicinity of the poles, the amplitude factorizes and takes the universal form \autocite{Huang:2025icl}
 \begin{equation}
     \mathcal{M}(s,t)|_{s \to m_i^2} \sim -\frac{\lambda_i^2 \mathcal{P}_{J_i}\left(1 + \frac{2t}{s}\right)}{s - m_i^2},
 \end{equation}
-with $\lambda_i^2 \geq 0$. Our goal is to derive an upper bound on $\lambda_i^2$. This is particularly interesting, as it will provide further insight into the structure the spectrum in these theories. If the upper bound on $\lambda_i^2$ vanishes, it would imply that our scalar cannot couple to the $i$-th resonance respecting unitarity and positivity.
+with $\lambda_i^2 \geq 0$. Our goal is to derive an upper bound on $\lambda_i^2$. This is particularly useful, as it will provide further insight into the structure the spectrum in these theories. If the upper bound on $\lambda_i^2$ vanishes, it would imply that our scalar cannot couple to the $i$-th resonance respecting unitarity and positivity.
 
 A possible approach to achieve this would be to repeat the analysis performed in \Cref{sec:dispersion}. First, one would explicitly write down the amplitude including the exchange of the resonances. Next, one would compute the corresponding arcs for this modified amplitude, which will now depend both on the Wilson coefficients and on the resonance couplings $\lambda_i^2$, and relate them to the appropriate heavy averages. Finally, one would combine the arcs in such a way that the contributions proportional to the Wilson coefficients cancel, yielding dispersion relations for the couplings.
 
@@ -557,7 +605,7 @@ Therefore, depending on the sign of $m_r^2 - 2m^2$, only one of these poles cont
 \]
 
 
-\section{Different Numbers of Subtractions}
+\section{Asymptotic UV behaviour}
 
 So far, we have focused on amplitudes that satisfy the Froissart bound,
 \begin{equation}
@@ -571,7 +619,9 @@ It is also interesting to consider amplitudes with more restrictive asymptotic b
 \end{equation}
 In these cases, we say that the amplitude satisfies an $n$-subtracted dispersion relation.
 
-This situation is physically relevant in at least two contexts. First, there exist amplitudes that converge faster than required by the Froissart bound. A notable example is the $W^+ W^- \to W^+ W^-$ scattering amplitude, which we will analyse in detail in \Cref{chap:ww}. In the Standard Model, this amplitude grows as $s$ for big center-of-mass energy \autocite{Schwartz:2014sze}, so it satisfies once substracted dispersion relations.
+Finding  dispersion relations with $n<2$ allows us to know under which IR conditions can the amplitude grow slower at high energies.
+This situation is physically relevant in at least two contexts. 
+First, there exist amplitudes that converge faster than required by the Froissart bound. A notable example is the $W^+ W^- \to W^+ W^-$ scattering amplitude, which we will analyse in detail in \Cref{chap:ww}. In the Standard Model, this amplitude grows as $s$ for big center-of-mass energy \autocite{Schwartz:2014sze}, so it satisfies once substracted dispersion relations.
 
 Second, this behaviour naturally arises in supersymmetric theories, where amplitudes can be written as
 \begin{equation}
