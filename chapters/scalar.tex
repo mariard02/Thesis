@@ -29,7 +29,7 @@ To start, we will consider the 2 to 2 scattering of massless scalar particles wi
 \end{align}
 Taking into account that $s+t+u =0$ and working in the forward limit, this amplitude becomes
 \begin{equation}
-    \mathcal{M}_f(s) = - \lambda - a^2 \left( - \frac{1}{M^2} + \frac{1}{-M^2 + s} + \frac{1}{-M^2 - s}  \right) + 2 g_2 s^2 + 4 g_4 s^4 + \cdots
+    \mathcal{M}_f(s) = - \lambda - \alpha^2 \left( - \frac{1}{M^2} + \frac{1}{-M^2 + s} + \frac{1}{-M^2 - s}  \right) + 2 g_2 s^2 + 4 g_4 s^4 + \cdots
 \end{equation}
 The -2 substracted arc is given by 
 \begin{equation}
@@ -74,11 +74,13 @@ This will be positive as long as
 \begin{equation}
     m^2 \geq \frac{M^2}{2},
 \end{equation}
-this is, the setup will be consistent as long as the mass of the resonance is small enough. In particular, the case $m = M$ (when the mass of the resonance is the same as the mass of the outer legs) is consistent.
+this is, the setup will be consistent as long as the mass of the resonance is small enough. 
 
-\begin{Todo}
-    Preguntar esto.
-\end{Todo}
+The situation is more subtle in the case \(m=M\). Although the coefficient \(a_{-2}\) is positive, and therefore the simplest positivity constraint is satisfied, this does not necessarily imply the existence of a consistent UV completion. In particular, the null constraints associated with \((-2)\)-subtracted dispersion relations are expected to require the presence of additional higher-spin states. Since the exchange of a massive resonance contributes negatively to the relevant residue independently of its spin, these extra states would generate further negative contributions. Therefore, while the condition
+\begin{equation}
+    m^2 \geq \frac{M^2}{2}
+\end{equation}
+removes the immediate contradiction with positivity, it is unlikely that a fully consistent solution exists once all states required by analyticity, crossing symmetry and unitarity are taken into account. 
 
 \section{0-th subtracted dispersion relations}
 
@@ -329,7 +331,7 @@ is shown in \Cref*{fig:scalar_comparison}. The drop at low masses is a numerical
         \caption{Including higher-order terms}
         \label{fig:scalar_scalar_with_high}
     \end{subfigure}
-    \caption{Comparison of the scalar-scalar scattering amplitude with $J_{max}=100$ and with $J_{max} = 100 \cdot 10^4$.}
+    \caption{Comparison of the scalar-scalar scattering amplitude with $J_{\text{max}}=100$ and with $J_{\text{max}} = 100 \cdot 10^4$.}
     \label{fig:scalar_comparison}
 \end{figure}
 
